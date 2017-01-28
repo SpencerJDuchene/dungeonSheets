@@ -14,6 +14,7 @@ public class main {
         interact.currentStats();
         interact.statModGen();
         interact.skills();
+        interact.skills();
 
 
 
