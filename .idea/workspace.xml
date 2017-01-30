@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5ac49eb-c7cf-4afd-9ea7-bf0bdf8bff0a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Controller.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/GUI/Dungeon_Sheets_Gui.fxml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GUI/Dungeon_Sheets_Gui.fxml" afterPath="$PROJECT_DIR$/src/main/Dungeon_Sheets_Gui.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/main/main.class" afterPath="$PROJECT_DIR$/out/production/dungeonSheets/main/main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="d5ac49eb-c7cf-4afd-9ea7-bf0bdf8bff0a" name="Default" comment="main java class added&#10;.idea stuff i dont understand">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/main.java" afterPath="$PROJECT_DIR$/src/main/main.java" />
     </list>
     <ignored path="dungeonSheets.iws" />
@@ -43,8 +38,8 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="264">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -773,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="264">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

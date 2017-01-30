@@ -31,13 +31,16 @@ public class main extends Application{
     public static void main(String[] args){
         background interact = new background(); //background extends StatGen so we get the same access
         System.out.println("Welcome to Dungeon Sheets, here are some random stats");
-        interact.trueRandomStats();
-        interact.currentStats();
-        interact.raceSelection();
-        interact.currentStats();
-        interact.statModGen();
-        interact.skills();
         launch(args);
+        /*
+        import java.util.logging.Level;
+    import java.util.logging.Logger;
+    import javafx.application.Application;
+    import javafx.fxml.FXMLLoader;
+    import javafx.scene.Scene;
+    import javafx.scene.layout.StackPane;
+    import javafx.stage.Stage;
+         */
     }
 
 }
