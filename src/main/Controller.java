@@ -4,18 +4,24 @@ package main;
  */
 
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.*;
-import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import Player.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Button;
 
 
 public class Controller {
-
+    //cant remember if making this global is bad or not
+    StatGen statCreate = new StatGen();
     @FXML
     private TextField StrDisplay, DexDisplay,ConDisplay,ChaDisplay,WisDisplay,IntDisplay;
+    @FXML
+    private TextField StrDisplay1, DexDisplay1,ConDisplay1,ChaDisplay1,WisDisplay1,IntDisplay1;
     @FXML
     private TextField strModArea,dexModArea,conModArea,chaModArea,wisModArea,intModArea;
     @FXML
@@ -24,7 +30,10 @@ public class Controller {
     private Label InvestLabel,MediLabel,NatureLabel,PercepLabel,PerformLabel,PersuadeLabel,ReliLabel;
     @FXML
     private Label SleightLabel,StealthLabel,SurviveLabel;
-
+    @FXML
+    private TextField strEdit,dexEdit,conEdit,chaEdit,wisEdit,intEdit;
+    @FXML
+    private javafx.scene.control.Button updateButton;
 
 
 
@@ -33,12 +42,15 @@ public class Controller {
     @FXML // URL location of the FXML file that was given to the FXMLLoader
     private URL location;
 
+    @FXML
+    void buttonPressed(ActionEvent buttonPressed){
+
+    }
     @FXML // This method is called by the FXMLLoader when initialization is complete
+    //omg this does wayyy to much imo how do I clean this up?
     void initialize() {
         int strength, dexterity,constitution,charisma,wisdom,intelligence;
 
-
-        StatGen statCreate = new StatGen();
 
         //use a method to let players pick stats
         //TODO change trueRandomStats to be 3 randoms 1-6 then add to get statistics right.
@@ -66,6 +78,13 @@ public class Controller {
         ChaDisplay.setText(charisma1.toString());
         WisDisplay.setText(wisdom1.toString());
         IntDisplay.setText(intelligence1.toString());
+        //sets base stats on stat change page
+        StrDisplay1.setText(strength1.toString());
+        DexDisplay1.setText(dexterity1.toString());
+        ConDisplay1.setText(constitution1.toString());
+        ChaDisplay1.setText(charisma1.toString());
+        WisDisplay1.setText(wisdom1.toString());
+        IntDisplay1.setText(intelligence1.toString());
 
 
         //set the modifier text areas
