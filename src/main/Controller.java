@@ -36,7 +36,6 @@ public class Controller {
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
         int strength, dexterity,constitution,charisma,wisdom,intelligence;
-        int strengthMod, dexterityMod,constitutionMod,charismaMod,wisdomMod,intelligenceMod;
 
 
         StatGen statCreate = new StatGen();
@@ -67,13 +66,7 @@ public class Controller {
         ChaDisplay.setText(charisma1.toString());
         WisDisplay.setText(wisdom1.toString());
         IntDisplay.setText(intelligence1.toString());
-        //loads the statMods
-        strengthMod = statCreate.getStrength_Mod();
-        dexterityMod = statCreate.getDexterity_Mod();
-        constitutionMod = statCreate.getConstitution_Mod();
-        charismaMod = statCreate.getCharisma_Mod();
-        wisdomMod = statCreate.getWisdom_Mod();
-        intelligenceMod = statCreate.getIntelligence_Mod();
+
 
         //set the modifier text areas
         Integer StrMod = new Integer(statCreate.getStrength_Mod());
@@ -88,5 +81,8 @@ public class Controller {
         wisModArea.setText(WisMod.toString());
         Integer IntMod = new Integer(statCreate.getIntelligence_Mod());
         intModArea.setText(IntMod.toString());
+
+        //do this for all skills later
+        acroLabel.setText(DexMod.toString());
     }
 }
