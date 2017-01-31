@@ -90,18 +90,18 @@
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Charisma" GridPane.columnIndex="3" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Wisdom" GridPane.columnIndex="4" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Intelligence" GridPane.columnIndex="5" />
-                                    <TextField fx:id="StrDisplay" editable="false" prefWidth="289.0" GridPane.rowIndex="1" />
-                                    <TextField fx:id="DexDisplay" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <TextField fx:id="ConDisplay" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <TextField fx:id="ChaDisplay" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                                    <TextField fx:id="WisDisplay" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                    <TextField fx:id="IntDisplay" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                                    <TextField fx:id="strModArea" GridPane.rowIndex="2" />
-                                    <TextField fx:id="dexModArea" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <TextField fx:id="conModArea" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <TextField fx:id="chaModArea" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                                    <TextField fx:id="wisModArea" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                    <TextField fx:id="intModArea" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <TextField fx:id="StrDisplay" alignment="CENTER" editable="false" prefWidth="289.0" GridPane.rowIndex="1" />
+                                    <TextField fx:id="DexDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="ConDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <TextField fx:id="ChaDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <TextField fx:id="WisDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <TextField fx:id="IntDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <TextField fx:id="strModArea" alignment="CENTER" editable="false" GridPane.rowIndex="2" />
+                                    <TextField fx:id="dexModArea" alignment="CENTER" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <TextField fx:id="conModArea" alignment="CENTER" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <TextField fx:id="chaModArea" alignment="CENTER" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <TextField fx:id="wisModArea" alignment="CENTER" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <TextField fx:id="intModArea" alignment="CENTER" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="2" />
                                  </children>
                               </GridPane>
                               <Text layoutX="14.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skills" wrappingWidth="72.150390625" />

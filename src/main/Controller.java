@@ -60,7 +60,6 @@ public class Controller {
         Integer wisdom1 = new Integer(wisdom);
         intelligence = statCreate.getIntelligence();
         Integer intelligence1 = new Integer(intelligence);
-        statCreate.trueRandomStats();
         //sets the base stats
         StrDisplay.setText(strength1.toString());
         DexDisplay.setText(dexterity1.toString());
@@ -77,17 +76,17 @@ public class Controller {
         intelligenceMod = statCreate.getIntelligence_Mod();
 
         //set the modifier text areas
-        Integer StrMod = new Integer(strengthMod);
+        Integer StrMod = new Integer(statCreate.getStrength_Mod());
         strModArea.setText(StrMod.toString());
-        Integer DexMod = new Integer(dexterityMod);
+        Integer DexMod = new Integer(statCreate.getDexterity_Mod());
         dexModArea.setText(DexMod.toString());
-        Integer ConMod = new Integer(constitutionMod);
+        Integer ConMod = new Integer(statCreate.getDexterity_Mod());
         conModArea.setText(ConMod.toString());
-        Integer ChaMod = new Integer(charismaMod);
+        Integer ChaMod = new Integer(statCreate.getCharisma_Mod());
         chaModArea.setText(ChaMod.toString());
-        Integer WisMod = new Integer(wisdomMod);
+        Integer WisMod = new Integer(statCreate.getWisdom_Mod());
         wisModArea.setText(WisMod.toString());
-        Integer IntMod = new Integer(intelligenceMod);
+        Integer IntMod = new Integer(statCreate.getIntelligence_Mod());
         intModArea.setText(IntMod.toString());
     }
 }
