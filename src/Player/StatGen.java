@@ -121,12 +121,12 @@ import java.util.*;
     //gets, and updates if need be, the Modifiers for the base player stats.
     public void statModGen(){ //this class gets the modifiers of stat
         //mod = 1/2 Stat  - 5
-        Strength_Mod = (getStrength()/2) - 5;
-        Dexterity_Mod = (getDexterity()/2) - 5;
-        Constitution_Mod = (getConstitution()/2) - 5;
-        Charisma_Mod = (getCharisma()/2) - 5;
-        Wisdom_Mod = (getWisdom()/2) - 5;
-        Intelligence_Mod = (getIntelligence()/2) - 5;
+        Strength_Mod = ((getStrength()/2) - 5);
+        Dexterity_Mod = ((getDexterity()/2) - 5);
+        Constitution_Mod = ((getConstitution()/2) - 5);
+        Charisma_Mod = ((getCharisma()/2) - 5);
+        Wisdom_Mod = ((getWisdom()/2) - 5);
+        Intelligence_Mod = ((getIntelligence()/2) - 5);
     }
     //handles skill stat generation
     public void skills(){

@@ -73,7 +73,7 @@ public class Controller {
         strModArea.setText(StrMod.toString());
         Integer DexMod = new Integer(statCreate.getDexterity_Mod());
         dexModArea.setText(DexMod.toString());
-        Integer ConMod = new Integer(statCreate.getDexterity_Mod());
+        Integer ConMod = new Integer(statCreate.getConstitution_Mod());
         conModArea.setText(ConMod.toString());
         Integer ChaMod = new Integer(statCreate.getCharisma_Mod());
         chaModArea.setText(ChaMod.toString());
