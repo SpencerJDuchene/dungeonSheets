@@ -84,5 +84,22 @@ public class Controller {
 
         //do this for all skills later
         acroLabel.setText(DexMod.toString());
+        AnmlLabel.setText(ChaMod.toString());
+        ArcanaLabel.setText(IntMod.toString());
+        athlLabel.setText(StrMod.toString());
+        DecepLabel.setText(ChaMod.toString());
+        HistLabel.setText(IntMod.toString());
+        InsightLabel.setText(WisMod.toString());
+        IntimidLabel.setText(ChaMod.toString());
+        InvestLabel.setText(IntMod.toString());
+        MediLabel.setText(IntMod.toString());
+        NatureLabel.setText(WisMod.toString());
+        PercepLabel.setText(WisMod.toString());
+        PerformLabel.setText(ChaMod.toString());
+        PersuadeLabel.setText(ChaMod.toString());
+        ReliLabel.setText(WisMod.toString());
+        SleightLabel.setText(DexMod.toString());
+        StealthLabel.setText(DexMod.toString());
+        SurviveLabel.setText(WisMod.toString());
     }
 }
