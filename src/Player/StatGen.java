@@ -175,7 +175,6 @@ import java.util.*;
     }
     //displays what the current stats are
     public void currentStats(){ //IDK HOW STRING CLASSES WORK HAHAHAHA......
-        statModGen();
         System.out.println("Strength: " + getStrength() + "("+ getStrength_Mod() + ")\t\tDexterity: " + getDexterity() +
                 "("+ getDexterity_Mod() + ")");
         System.out.println("Constitution: " + getConstitution() + "("+ getConstitution_Mod() + ")\tCharisma: " + getCharisma() +

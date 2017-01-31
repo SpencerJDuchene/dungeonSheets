@@ -31,6 +31,7 @@ public class main extends Application{
     public static void main(String[] args){
         background interact = new background(); //background extends StatGen so we get the same access
         System.out.println("Welcome to Dungeon Sheets, here are some random stats");
+
         launch(args);
         /*
         import java.util.logging.Level;
