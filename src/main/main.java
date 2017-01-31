@@ -18,10 +18,10 @@ public class main extends Application{
     @Override
     public void start(Stage primaryStage) {
         try {
-            VBox page = (VBox) FXMLLoader.load(main.class.getResource("Dungeon_Sheets_Gui.fxml"));
+            VBox page = (VBox) FXMLLoader.load(main.class.getResource("/main/Dungeon_Sheets_Gui.fxml"));
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
-            primaryStage.setTitle("FXML is Simple");
+            primaryStage.setTitle("Dungeon Sheets");
             primaryStage.show();
         } catch (Exception ex) {
             Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);

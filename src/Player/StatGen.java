@@ -8,51 +8,51 @@ import java.util.*;
  *      controlling the stats dependent on them. Including: Skills, Saving Throws, Modifiers, HP, TEMP HP
  *      HIT Dice, Death Saves, Proficiency,Initiative, Armor Class, Speed, ETC...
  */ public class StatGen {
-    int getStrength() {
+    public int getStrength() {
         return Strength;
     }
 
-    void setStrength(int strength) {
+    public void setStrength(int strength) {
         Strength = strength;
     }
 
-    int getDexterity() {
+    public int getDexterity() {
         return Dexterity;
     }
 
-    void setDexterity(int dexterity) {
+    public void setDexterity(int dexterity) {
         Dexterity = dexterity;
     }
 
-    int getConstitution() {
+    public int getConstitution() {
         return Constitution;
     }
 
-    void setConstitution(int constitution) {
+    public void setConstitution(int constitution) {
         Constitution = constitution;
     }
 
-    int getWisdom() {
+    public int getWisdom() {
         return Wisdom;
     }
 
-    void setWisdom(int wisdom) {
+    public void setWisdom(int wisdom) {
         Wisdom = wisdom;
     }
 
-    int getIntelligence() {
+    public int getIntelligence() {
         return Intelligence;
     }
 
-    void setIntelligence(int intelligence) {
+    public void setIntelligence(int intelligence) {
         Intelligence = intelligence;
     }
 
-    int getCharisma() {
+    public int getCharisma() {
         return Charisma;
     }
 
-    void setCharisma(int charisma) {
+    public void setCharisma(int charisma) {
         Charisma = charisma;
     }
 
@@ -61,51 +61,51 @@ import java.util.*;
     protected int Insight, Intimidation,Investigation,Medicine,Nature,Perception,Performance;
     protected int Persuasion,Religion,Sleight_of_Hand,Stealth,Survival;
 
-    int getStrength_Mod() {
+    public int getStrength_Mod() {
         return Strength_Mod;
     }
 
-    void setStrength_Mod(int strength_Mod) {
+    public void setStrength_Mod(int strength_Mod) {
         Strength_Mod = strength_Mod;
     }
 
-    int getDexterity_Mod() {
+    public int getDexterity_Mod() {
         return Dexterity_Mod;
     }
 
-    void setDexterity_Mod(int dexterity_Mod) {
+    public void setDexterity_Mod(int dexterity_Mod) {
         Dexterity_Mod = dexterity_Mod;
     }
 
-    int getConstitution_Mod() {
+    public int getConstitution_Mod() {
         return Constitution_Mod;
     }
 
-    void setConstitution_Mod(int constitution_Mod) {
+    public void setConstitution_Mod(int constitution_Mod) {
         Constitution_Mod = constitution_Mod;
     }
 
-    int getWisdom_Mod() {
+    public int getWisdom_Mod() {
         return Wisdom_Mod;
     }
 
-    void setWisdom_Mod(int wisdom_Mod) {
+    public void setWisdom_Mod(int wisdom_Mod) {
         Wisdom_Mod = wisdom_Mod;
     }
 
-    int getIntelligence_Mod() {
+    public int getIntelligence_Mod() {
         return Intelligence_Mod;
     }
 
-    void setIntelligence_Mod(int intelligence_Mod) {
+    public void setIntelligence_Mod(int intelligence_Mod) {
         Intelligence_Mod = intelligence_Mod;
     }
 
-    int getCharisma_Mod() {
+    public int getCharisma_Mod() {
         return Charisma_Mod;
     }
 
-    void setCharisma_Mod(int charisma_Mod) {
+    public void setCharisma_Mod(int charisma_Mod) {
         Charisma_Mod = charisma_Mod;
     }
 
