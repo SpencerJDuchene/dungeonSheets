@@ -164,12 +164,12 @@ import java.util.*;
     //this generates purely random stats 3-18
     public void trueRandomStats(){
         Random baseStat = new Random();
-        Strength = baseStat.nextInt(15) + 3;
-        Dexterity = baseStat.nextInt(15) + 3;
-        Constitution = baseStat.nextInt(15) + 3;
-        Wisdom = baseStat.nextInt(15) + 3;
-        Intelligence = baseStat.nextInt(15) + 3;
-        Charisma = baseStat.nextInt(15) + 3;
+        Strength = baseStat.nextInt(5) + baseStat.nextInt(5) +baseStat.nextInt(5) + 3;
+        Dexterity = baseStat.nextInt(5) + baseStat.nextInt(5) + baseStat.nextInt(5) + 3;
+        Constitution = baseStat.nextInt(5) + baseStat.nextInt(5) + baseStat.nextInt(5) + 3;
+        Wisdom = baseStat.nextInt(5) + baseStat.nextInt(5) + baseStat.nextInt(5) + 3;
+        Intelligence = baseStat.nextInt(5) + baseStat.nextInt(5) + baseStat.nextInt(5) + 3;
+        Charisma = baseStat.nextInt(5) + baseStat.nextInt(5) + baseStat.nextInt(5) + 3;
         //calls on the dependent stats method to handle skills and otherwise with these stats.
         statModGen();
     }
