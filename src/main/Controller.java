@@ -51,13 +51,6 @@ public class Controller {
     void initialize() {
         int strength, dexterity,constitution,charisma,wisdom,intelligence;
 
-
-        //use a method to let players pick stats
-        //TODO change trueRandomStats to be 3 randoms 1-6 then add to get statistics right.
-        statCreate.trueRandomStats();
-        statCreate.statModGen();
-        statCreate.skills();
-
         //loads the base stats
         strength = statCreate.getStrength();
         Integer strength1 = new Integer(strength);

@@ -98,7 +98,6 @@
                                     <TextField fx:id="ChaDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                                     <TextField fx:id="WisDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
                                     <TextField fx:id="IntDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-                                    <TextField fx:id="strModArea" alignment="CENTER" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                     <TextField fx:id="dexModArea" alignment="CENTER" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                                     <TextField fx:id="conModArea" alignment="CENTER" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                                     <TextField fx:id="chaModArea" alignment="CENTER" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2" />
@@ -106,6 +105,7 @@
                                     <TextField fx:id="intModArea" alignment="CENTER" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="2" />
                                     <Label text="Base" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                                     <Label text="Modifier" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="strModArea" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                  </children>
                               </GridPane>
                               <Text layoutX="14.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skills" wrappingWidth="72.150390625" />
@@ -168,92 +168,92 @@
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Survival" GridPane.columnIndex="7" GridPane.rowIndex="2" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Optional" GridPane.columnIndex="7" GridPane.rowIndex="3" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Optional" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-                                    <Label fx:id="acroLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <Label fx:id="acroLabel" text="Dex" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="AnmlLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <Label fx:id="AnmlLabel" text="Cha" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="ArcanaLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <Label fx:id="ArcanaLabel" text="Int" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="athlLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                    <Label fx:id="athlLabel" text="Str" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="DecepLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                    <Label fx:id="DecepLabel" text="Cha" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="HistLabel" text="Label" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <Label fx:id="HistLabel" text="Int" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="InsightLabel" text="Label" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <Label fx:id="InsightLabel" text="Wis" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="IntimidLabel" text="Label" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <Label fx:id="IntimidLabel" text="Cha" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="InvestLabel" text="Label" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                    <Label fx:id="InvestLabel" text="Int" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="MediLabel" text="Label" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                    <Label fx:id="MediLabel" text="Int" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="NatureLabel" text="Label" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <Label fx:id="NatureLabel" text="Wis" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="PercepLabel" text="Label" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <Label fx:id="PercepLabel" text="Wis" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="PerformLabel" text="Label" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <Label fx:id="PerformLabel" text="Cha" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="PersuadeLabel" text="Label" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                    <Label fx:id="PersuadeLabel" text="Cha" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="ReliLabel" text="Label" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                    <Label fx:id="ReliLabel" text="Wis" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="SleightLabel" text="Label" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <Label fx:id="SleightLabel" text="Dex" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="StealthLabel" text="Label" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <Label fx:id="StealthLabel" text="Dex" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="SurviveLabel" text="Label" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <Label fx:id="SurviveLabel" text="Wis" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="2.0" />
                                        </padding>

@@ -29,11 +29,13 @@ public class main extends Application{
     }
 
     public static void main(String[] args){
-        Player.StatGen test = new StatGen();
-        test.getProficiency();
+        statRolls playerRolls = new statRolls();
+        playerRolls.roll6();
+        playerRolls.roll7();
+        playerRolls.roll4SixTimes();
+        playerRolls.roll4SevenTimes();
         background interact = new background(); //background extends StatGen so we get the same access
-        System.out.println("Welcome to Dungeon Sheets, here are some random stats");
-        launch(args);
+        //launch(args);
 
     }
 
