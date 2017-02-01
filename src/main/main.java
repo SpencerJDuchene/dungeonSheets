@@ -18,10 +18,10 @@ public class main extends Application{
     @Override
     public void start(Stage primaryStage) {
         try {
-            VBox page = (VBox) FXMLLoader.load(main.class.getResource("/main/Dungeon_Sheets_Gui.fxml"));
+            VBox page = (VBox) FXMLLoader.load(main.class.getResource("Dungeon_Sheets_Gui.fxml"));
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
-            primaryStage.setTitle("Dungeon Sheets ALPHA 0.2.1");
+            primaryStage.setTitle("Dungeon Sheets ALPHA 0.2.3");
             primaryStage.show();
         } catch (Exception ex) {
             Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);

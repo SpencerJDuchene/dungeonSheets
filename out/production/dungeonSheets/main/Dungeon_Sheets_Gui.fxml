@@ -106,7 +106,7 @@
                                     <Label fx:id="chaModArea" text="Cha Mod" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                                     <Label fx:id="wisModArea" text="Wis Mod" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                                     <Label fx:id="intModArea" text="Int Mod" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="StrDisplay" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                     <Button fx:id="updateButton" mnemonicParsing="false" onAction="#buttonPressed" text="UPDATE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
                                  </children>
                               </GridPane>

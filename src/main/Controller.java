@@ -1,6 +1,6 @@
 package main;
 /**
- * Sample Skeleton for 'Dungeon_Sheets_Gui.fxml' Controller Class
+ * 'Dungeon_Sheets_Gui.fxml' Controller Class
  */
 
 
@@ -43,66 +43,31 @@ public class Controller {
     private ResourceBundle resourceBundle;
     @FXML // URL location of the FXML file that was given to the FXMLLoader
     private URL location;
-
-
+    //takes the event from the update button and updates stats when pressed
     @FXML
     void buttonPressed(ActionEvent updateButton) {
-            if (StrDisplay != null) {
+        while (count < 1) {
+
                 try {
                     statCreate.setStrength(Integer.parseInt(StrDisplay.getText()));
-                    statCreate.GenAll();
-                    refresh();
-                } catch (Exception e) {
-                    System.out.println("Non-numeric character exist");
-                }
-            }
-            if (DexDisplay != null) {
-                try {
                     statCreate.setDexterity(Integer.parseInt(DexDisplay.getText()));
-                    statCreate.GenAll();
-                    refresh();
-                } catch (Exception e) {
-                    System.out.println("Non-numeric character exist");
-                }
-            }
-            if (ConDisplay != null) {
-                try {
                     statCreate.setConstitution(Integer.parseInt(ConDisplay.getText()));
-                    statCreate.GenAll();
-                    refresh();
-                } catch (Exception e) {
-                    System.out.println("Non-numeric character exist");
-                }
-            }
-            if (WisDisplay != null) {
-                try {
+                    statCreate.setIntelligence(Integer.parseInt(IntDisplay.getText()));
+                    statCreate.setCharisma(Integer.parseInt(ChaDisplay.getText()));
                     statCreate.setWisdom(Integer.parseInt(WisDisplay.getText()));
                     statCreate.GenAll();
                     refresh();
                 } catch (Exception e) {
                     System.out.println("Non-numeric character exist");
                 }
+            count++;
             }
-            if (ChaDisplay != null) {
-                try {
-                    statCreate.setCharisma(Integer.parseInt(ChaDisplay.getText()));
-                    statCreate.GenAll();
-                    refresh();
-                } catch (Exception e) {
-                    System.out.println("Non-numeric character exist");
-                }
-            }
-            if (IntDisplay != null) {
-                try {
-                    statCreate.setIntelligence(Integer.parseInt(IntDisplay.getText()));
-                    statCreate.GenAll();
-                    refresh();
-                } catch (Exception e) {
-                    System.out.println("Non-numeric character exist");
-                }
-            }
+        count = 0;
         }
 
+
+
+    //refreshes all fields for the entire gui.
     @FXML
     void refresh(){
         int strength, dexterity,constitution,charisma,wisdom,intelligence;
@@ -170,8 +135,8 @@ public class Controller {
         StealthLabel.setText(DexMod.toString());
         SurviveLabel.setText(WisMod.toString());
     }
-    @FXML // This method is called by the FXMLLoader when initialization is complete
-    //omg this does wayyy to much imo how do I clean this up?
+    @FXML
+    //calls all data needed to start the program gui
     void initialize() {
         refresh();
     }
