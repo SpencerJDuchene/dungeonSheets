@@ -65,9 +65,6 @@ public class Controller {
             }
         count = 0;
         }
-
-
-
     //refreshes all fields for the entire gui.
     @FXML
     void refresh(){
