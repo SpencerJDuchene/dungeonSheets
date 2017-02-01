@@ -21,7 +21,7 @@ public class main extends Application{
             VBox page = (VBox) FXMLLoader.load(main.class.getResource("/main/Dungeon_Sheets_Gui.fxml"));
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
-            primaryStage.setTitle("Dungeon Sheets");
+            primaryStage.setTitle("Dungeon Sheets ALPHA 0.2.1");
             primaryStage.show();
         } catch (Exception ex) {
             Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
@@ -29,19 +29,12 @@ public class main extends Application{
     }
 
     public static void main(String[] args){
+        Player.StatGen test = new StatGen();
+        test.getProficiency();
         background interact = new background(); //background extends StatGen so we get the same access
         System.out.println("Welcome to Dungeon Sheets, here are some random stats");
+        //launch(args);
 
-        launch(args);
-        /*
-        import java.util.logging.Level;
-    import java.util.logging.Logger;
-    import javafx.application.Application;
-    import javafx.fxml.FXMLLoader;
-    import javafx.scene.Scene;
-    import javafx.scene.layout.StackPane;
-    import javafx.stage.Stage;
-         */
     }
 
 }

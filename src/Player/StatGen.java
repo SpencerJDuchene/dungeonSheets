@@ -61,6 +61,7 @@ import java.util.*;
     protected int Insight, Intimidation,Investigation,Medicine,Nature,Perception,Performance;
     protected int Persuasion,Religion,Sleight_of_Hand,Stealth,Survival;
 
+
     public int getStrength_Mod() {
         return Strength_Mod;
     }
@@ -110,16 +111,76 @@ import java.util.*;
     }
 
     protected int Strength_Mod, Dexterity_Mod,Constitution_Mod,Wisdom_Mod,Intelligence_Mod,Charisma_Mod;
-    protected int Player_Level,Hit_Dice,Initiative, Armor_Class,Speed;
 
-    void Proffiency(int Player_Level){
+    public int getPlayer_Level() {
+        return Player_Level;
+    }
 
-    }//Handle for higher levels
+    public void setPlayer_Level(int player_Level) {
+        Player_Level = player_Level;
+    }
 
+    public int getHit_Dice() {
+        return Hit_Dice;
+    }
 
+    public void setHit_Dice(int hit_Dice) {
+        Hit_Dice = hit_Dice;
+    }
+
+    public int getInitiative() {
+        return Initiative;
+    }
+
+    public void setInitiative(int initiative) {
+        Initiative = initiative;
+    }
+
+    public int getArmor_Class() {
+        return Armor_Class;
+    }
+
+    public void setArmor_Class(int armor_Class) {
+        Armor_Class = armor_Class;
+    }
+
+    public int getSpeed() {
+        return Speed;
+    }
+
+    public void setSpeed(int speed) {
+        Speed = speed;
+    }
+
+    protected int Player_Level = 1;
+    protected int Hit_Dice;
+    protected int Initiative;
+    protected int Armor_Class;
+    protected int Speed;
+
+    public void setProficiency(int proficiency) {
+        this.proficiency = proficiency;
+    }
+
+    protected int proficiency;
+    //finds player proffiency, this calculation loads players level and checks it against a math formula
+    public void getProficiency(){
+        int level = getPlayer_Level();
+        proficiency = 2;
+        while ((level - 4) > 0){
+            proficiency++;
+            level = level - 4;
+            if (level == 0){
+                break;
+            }
+        }
+        System.out.println(proficiency);
+
+    }
     //TODO Genrate getters and setters
     //gets, and updates if need be, the Modifiers for the base player stats.
-    public void statModGen(){ //this class gets the modifiers of stat
+    public void statModGen(){
+        //this class gets the modifiers of stat
         //mod = 1/2 Stat  - 5
         Strength_Mod = ((getStrength()/2) - 5);
         Dexterity_Mod = ((getDexterity()/2) - 5);
