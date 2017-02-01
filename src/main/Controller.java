@@ -45,6 +45,7 @@ public class Controller {
     private URL location;
     //takes the event from the update button and updates stats when pressed
     @FXML
+    //update when focus lost
     void buttonPressed(ActionEvent updateButton) {
         while (count < 1) {
 

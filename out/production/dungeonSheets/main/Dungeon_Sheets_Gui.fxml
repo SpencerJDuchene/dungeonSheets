@@ -70,7 +70,7 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="640.0">
                            <children>
-                              <GridPane gridLinesVisible="true" layoutX="5.0" layoutY="14.0" prefHeight="110.0" prefWidth="630.0">
+                              <GridPane layoutX="5.0" layoutY="14.0" prefHeight="110.0" prefWidth="630.0">
                                 <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -110,7 +110,7 @@
                                     <Button fx:id="updateButton" mnemonicParsing="false" onAction="#buttonPressed" text="UPDATE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
                                  </children>
                               </GridPane>
-                              <GridPane gridLinesVisible="true" layoutX="5.0" layoutY="219.0" prefHeight="191.0" prefWidth="630.0">
+                              <GridPane layoutX="5.0" layoutY="231.0" prefHeight="191.0" prefWidth="630.0">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.33334350585938" minWidth="10.0" prefWidth="27.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.66668701171875" minWidth="10.0" prefWidth="137.33334350585938" />
@@ -129,26 +129,26 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <CheckBox mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Acrobatics" GridPane.columnIndex="1" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Animal Handling" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Arcana" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -271,7 +271,7 @@
                                     </Label>
                                  </children>
                               </GridPane>
-                              <GridPane gridLinesVisible="true" layoutX="5.0" layoutY="124.0" prefHeight="95.0" prefWidth="630.0">
+                              <GridPane layoutX="5.0" layoutY="124.0" prefHeight="95.0" prefWidth="630.0">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -282,7 +282,6 @@
                                 <rowConstraints>
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
                                     <Label text="Hit Points" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -290,11 +289,11 @@
                                     <Label text="Temporary Hit Points" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label text="Initiative" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label text="Armor Class" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label text="Label" GridPane.rowIndex="1" />
-                                    <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <Label text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                                    <Label text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <Label alignment="CENTER" text="HP" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label text="THP" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label text="HD" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label text="AC" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label text="INI" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                                  </children>
                               </GridPane>
                            </children>
@@ -469,6 +468,5 @@
             </TabPane>
       </children>
     </AnchorPane>
-      <TextField />
   </children>
 </VBox>
