@@ -19,6 +19,7 @@ import javafx.scene.control.Button;
 public class Controller {
     //cant remember if making this global is bad or not
     StatGen statCreate = new StatGen();
+    int count = 0;
     @FXML
     private TextField StrDisplay, DexDisplay,ConDisplay,ChaDisplay,WisDisplay,IntDisplay;
     @FXML
@@ -42,14 +43,66 @@ public class Controller {
     private ResourceBundle resourceBundle;
     @FXML // URL location of the FXML file that was given to the FXMLLoader
     private URL location;
-    
+
+
     @FXML
-    void buttonPressed(ActionEvent buttonPressed){
-        if(StrDisplay != null){
-
-
+    void buttonPressed(ActionEvent updateButton) {
+            if (StrDisplay != null) {
+                try {
+                    statCreate.setStrength(Integer.parseInt(StrDisplay.getText()));
+                    statCreate.GenAll();
+                    refresh();
+                } catch (Exception e) {
+                    System.out.println("Non-numeric character exist");
+                }
+            }
+            if (DexDisplay != null) {
+                try {
+                    statCreate.setDexterity(Integer.parseInt(DexDisplay.getText()));
+                    statCreate.GenAll();
+                    refresh();
+                } catch (Exception e) {
+                    System.out.println("Non-numeric character exist");
+                }
+            }
+            if (ConDisplay != null) {
+                try {
+                    statCreate.setConstitution(Integer.parseInt(ConDisplay.getText()));
+                    statCreate.GenAll();
+                    refresh();
+                } catch (Exception e) {
+                    System.out.println("Non-numeric character exist");
+                }
+            }
+            if (WisDisplay != null) {
+                try {
+                    statCreate.setWisdom(Integer.parseInt(WisDisplay.getText()));
+                    statCreate.GenAll();
+                    refresh();
+                } catch (Exception e) {
+                    System.out.println("Non-numeric character exist");
+                }
+            }
+            if (ChaDisplay != null) {
+                try {
+                    statCreate.setCharisma(Integer.parseInt(ChaDisplay.getText()));
+                    statCreate.GenAll();
+                    refresh();
+                } catch (Exception e) {
+                    System.out.println("Non-numeric character exist");
+                }
+            }
+            if (IntDisplay != null) {
+                try {
+                    statCreate.setIntelligence(Integer.parseInt(IntDisplay.getText()));
+                    statCreate.GenAll();
+                    refresh();
+                } catch (Exception e) {
+                    System.out.println("Non-numeric character exist");
+                }
+            }
         }
-    }
+
     @FXML
     void refresh(){
         int strength, dexterity,constitution,charisma,wisdom,intelligence;
