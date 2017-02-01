@@ -23,7 +23,7 @@ public class Controller {
     @FXML
     private TextField StrDisplay1, DexDisplay1,ConDisplay1,ChaDisplay1,WisDisplay1,IntDisplay1;
     @FXML
-    private TextField strModArea,dexModArea,conModArea,chaModArea,wisModArea,intModArea;
+    private Label strModArea,dexModArea,conModArea,chaModArea,wisModArea,intModArea;
     @FXML
     private Label acroLabel, AnmlLabel,ArcanaLabel,athlLabel,DecepLabel,HistLabel,InsightLabel,IntimidLabel;
     @FXML

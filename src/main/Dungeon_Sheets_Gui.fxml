@@ -98,14 +98,14 @@
                                     <TextField fx:id="ChaDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                                     <TextField fx:id="WisDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
                                     <TextField fx:id="IntDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-                                    <TextField fx:id="dexModArea" alignment="CENTER" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <TextField fx:id="conModArea" alignment="CENTER" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                                    <TextField fx:id="chaModArea" alignment="CENTER" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                    <TextField fx:id="wisModArea" alignment="CENTER" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                                    <TextField fx:id="intModArea" alignment="CENTER" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-                                    <Label text="Base" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label text="Ability Score" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                                     <Label text="Modifier" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <Label fx:id="strModArea" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label fx:id="strModArea" text="Str Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="dexModArea" text="Dex Mod" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="conModArea" text="Con Mod" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="chaModArea" text="Cha Mod" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="wisModArea" text="Wis Mod" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="intModArea" text="Int Mod" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                                  </children>
                               </GridPane>
                               <Text layoutX="14.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skills" wrappingWidth="72.150390625" />

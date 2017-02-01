@@ -19,7 +19,7 @@ import java.util.*;
 
     public void GenAll(){
         statModGen();
-        skills();
+        getSkills();
         getProficiency();
         getArmor_Class();
         getInitiative();
@@ -38,7 +38,7 @@ import java.util.*;
         Intelligence_Mod = ((getIntelligence()/2) - 5);
     }
     //handles skill stat generation
-    public void skills(){
+    public void getSkills(){
         //TODO create loop to check for proffiecency in a skill; do this in another method
         //TODO verify that the proper stat mods are used for skills
         Acrobatics = getDexterity_Mod();
