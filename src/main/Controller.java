@@ -4,6 +4,7 @@ package main;
  */
 
 
+import javafx.beans.value.ChangeListener;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import java.net.URL;
@@ -41,14 +42,16 @@ public class Controller {
     private ResourceBundle resourceBundle;
     @FXML // URL location of the FXML file that was given to the FXMLLoader
     private URL location;
-
+    
     @FXML
     void buttonPressed(ActionEvent buttonPressed){
+        if(StrDisplay != null){
 
+
+        }
     }
-    @FXML // This method is called by the FXMLLoader when initialization is complete
-    //omg this does wayyy to much imo how do I clean this up?
-    void initialize() {
+    @FXML
+    void refresh(){
         int strength, dexterity,constitution,charisma,wisdom,intelligence;
 
         //loads the base stats
@@ -113,5 +116,10 @@ public class Controller {
         SleightLabel.setText(DexMod.toString());
         StealthLabel.setText(DexMod.toString());
         SurviveLabel.setText(WisMod.toString());
+    }
+    @FXML // This method is called by the FXMLLoader when initialization is complete
+    //omg this does wayyy to much imo how do I clean this up?
+    void initialize() {
+        refresh();
     }
 }

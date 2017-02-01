@@ -92,12 +92,12 @@
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Charisma" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Wisdom" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Intelligence" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <TextField fx:id="StrDisplay" alignment="CENTER" editable="false" prefWidth="289.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <TextField fx:id="DexDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <TextField fx:id="ConDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                                    <TextField fx:id="ChaDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                    <TextField fx:id="WisDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                                    <TextField fx:id="IntDisplay" alignment="CENTER" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                    <TextField fx:id="StrDisplay" alignment="CENTER" prefWidth="289.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="DexDisplay" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <TextField fx:id="ConDisplay" alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <TextField fx:id="ChaDisplay" alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <TextField fx:id="WisDisplay" alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <TextField fx:id="IntDisplay" alignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1" />
                                     <Label text="Ability Score" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                                     <Label text="Modifier" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                                     <Label fx:id="strModArea" text="Str Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
