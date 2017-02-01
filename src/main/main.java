@@ -33,7 +33,7 @@ public class main extends Application{
         test.getProficiency();
         background interact = new background(); //background extends StatGen so we get the same access
         System.out.println("Welcome to Dungeon Sheets, here are some random stats");
-        //launch(args);
+        launch(args);
 
     }
 

@@ -60,6 +60,8 @@ import java.util.*;
     protected int Acrobatics, Animal_Handling, Arcana, Athletics, Deception, History;
     protected int Insight, Intimidation,Investigation,Medicine,Nature,Perception,Performance;
     protected int Persuasion,Religion,Sleight_of_Hand,Stealth,Survival;
+    protected int Player_Level = 1;
+    protected int Hit_Dice, Initiative, Armor_Class, Speed, experience;
 
 
     public int getStrength_Mod() {
@@ -152,12 +154,6 @@ import java.util.*;
         Speed = speed;
     }
 
-    protected int Player_Level = 1;
-    protected int Hit_Dice;
-    protected int Initiative;
-    protected int Armor_Class;
-    protected int Speed;
-
     public void setProficiency(int proficiency) {
         this.proficiency = proficiency;
     }
@@ -174,7 +170,7 @@ import java.util.*;
                 break;
             }
         }
-        System.out.println(proficiency);
+
 
     }
     //TODO Genrate getters and setters
