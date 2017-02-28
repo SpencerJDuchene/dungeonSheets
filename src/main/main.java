@@ -22,7 +22,7 @@ public class main extends Application{
             VBox page = (VBox) FXMLLoader.load(main.class.getResource("Dungeon_Sheets_Gui.fxml"));
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
-            primaryStage.getIcons().add(new Image(main.class.getResourceAsStream("C:\Users\Spencer\Downloads\dungeonsheetsico.png")));
+            primaryStage.getIcons().add(new Image(main.class.getResourceAsStream("dungeonsheetsico.png")));
             primaryStage.setTitle("Dungeon Sheets ALPHA 0.2.3");
             primaryStage.show();
         } catch (Exception ex) {
