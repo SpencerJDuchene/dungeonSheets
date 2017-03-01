@@ -1,19 +1,20 @@
 <component name="ArtifactManager">
-  <artifact type="javafx" name="dungeonSheets">
+  <artifact type="javafx" build-on-make="true" name="dungeonSheets">
     <output-path>$PROJECT_DIR$/out/artifacts/dungeonSheets</output-path>
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="main.main" />
-        <option name="description" value="" />
+        <option name="description" value="5th edition Character sheet Manager" />
         <option name="htmlPlaceholderId" value="" />
         <option name="title" value="Dungeon Sheets" />
         <option name="vendor" value="Spencer Duchene" />
-        <option name="version" value="" />
+        <option name="version" value="0.1.0" />
       </options>
     </properties>
     <root id="root">
       <element id="archive" name="dungeonSheets.jar">
         <element id="module-output" name="dungeonSheets" />
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/dungeonSheetsico.png" />
       </element>
     </root>
   </artifact>

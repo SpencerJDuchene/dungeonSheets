@@ -4,7 +4,6 @@ package main;
  */
 
 
-import javafx.beans.value.ChangeListener;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import java.net.URL;
@@ -13,7 +12,6 @@ import javafx.fxml.FXML;
 import Player.*;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Button;
 
 
 public class Controller {
@@ -32,6 +30,10 @@ public class Controller {
     private Label InvestLabel,MediLabel,NatureLabel,PercepLabel,PerformLabel,PersuadeLabel,ReliLabel;
     @FXML
     private Label SleightLabel,StealthLabel,SurviveLabel;
+    @FXML
+    public Label playerRaceLabel,playerSubRaceLabel;
+    @FXML
+    public RadioMenuItem Aasimar;
     @FXML
     private TextField strEdit,dexEdit,conEdit,chaEdit,wisEdit,intEdit;
     @FXML
@@ -69,6 +71,11 @@ public class Controller {
         count = 0;
         }
     //refreshes all fields for the entire gui.
+    void handleRace(ActionEvent raceAdjust){
+        //handle all menu item selections
+
+
+    }
 
     @FXML
     void refresh(){
@@ -94,7 +101,7 @@ public class Controller {
         ChaDisplay.setText(charisma1.toString());
         WisDisplay.setText(wisdom1.toString());
         IntDisplay.setText(intelligence1.toString());
-       
+
 
 
         //set the modifier text areas
