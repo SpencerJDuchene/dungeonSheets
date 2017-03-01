@@ -58,14 +58,18 @@ public class Controller {
                     statCreate.setWisdom(Integer.parseInt(WisDisplay.getText()));
                     statCreate.GenAll();
                     refresh();
-                } catch (Exception e) {
-                    System.out.println("Non-numeric character exist");
+                    //System.out.println("test");
+                }
+                catch (Exception e) {
+                    e.printStackTrace();
+                    System.out.println("Non-numeric character exists");
                 }
             count++;
             }
         count = 0;
         }
     //refreshes all fields for the entire gui.
+
     @FXML
     void refresh(){
         int strength, dexterity,constitution,charisma,wisdom,intelligence;
@@ -90,13 +94,7 @@ public class Controller {
         ChaDisplay.setText(charisma1.toString());
         WisDisplay.setText(wisdom1.toString());
         IntDisplay.setText(intelligence1.toString());
-        //sets base stats on stat change page
-        StrDisplay1.setText(strength1.toString());
-        DexDisplay1.setText(dexterity1.toString());
-        ConDisplay1.setText(constitution1.toString());
-        ChaDisplay1.setText(charisma1.toString());
-        WisDisplay1.setText(wisdom1.toString());
-        IntDisplay1.setText(intelligence1.toString());
+       
 
 
         //set the modifier text areas
@@ -133,9 +131,5 @@ public class Controller {
         StealthLabel.setText(DexMod.toString());
         SurviveLabel.setText(WisMod.toString());
     }
-    @FXML
-    //calls all data needed to start the program gui
-    void initialize() {
-        refresh();
-    }
+
 }

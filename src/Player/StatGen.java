@@ -23,7 +23,6 @@ import java.util.*;
         getProficiency();
         getArmor_Class();
         getInitiative();
-
     }
     //TODO Genrate getters and setters
     //gets, and updates if need be, the Modifiers for the base player stats.
@@ -220,6 +219,7 @@ import java.util.*;
     }
 
     public int getSpeed() {
+        //get player size. Need to handle race
         return Speed;
     }
 

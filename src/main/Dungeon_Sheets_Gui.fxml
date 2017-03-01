@@ -7,7 +7,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -369,95 +371,89 @@
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
                   </Tab>
-                  <Tab text="Stat Changing">
+                  <Tab text="Race">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <GridPane layoutX="7.0" layoutY="69.0" prefHeight="347.0" prefWidth="615.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="0.0">
+                              <GridPane layoutX="220.0" layoutY="173.0" prefHeight="436.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                 </columnConstraints>
                                 <rowConstraints>
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Label text="Current" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label text="Strength" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                    <Label text="Dexterity" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <Label text="Constitution" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-                                    <Label text="Charisma" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                                    <Label text="Wisdom" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-                                    <Label text="Intelligence" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-                                    <Label text="New" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <TextField fx:id="StrDisplay1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                                       <GridPane.margin>
-                                          <Insets right="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="DexDisplay1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                       <GridPane.margin>
-                                          <Insets right="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="ConDisplay1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                       <GridPane.margin>
-                                          <Insets right="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="ChaDisplay1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
-                                       <GridPane.margin>
-                                          <Insets right="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="WisDisplay1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
-                                       <GridPane.margin>
-                                          <Insets right="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="IntDisplay1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6">
-                                       <GridPane.margin>
-                                          <Insets right="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="strEdit" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                                       <GridPane.margin>
-                                          <Insets left="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="dexEdit" GridPane.columnIndex="2" GridPane.rowIndex="2">
-                                       <GridPane.margin>
-                                          <Insets left="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="conEdit" GridPane.columnIndex="2" GridPane.rowIndex="3">
-                                       <GridPane.margin>
-                                          <Insets left="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="chaEdit" GridPane.columnIndex="2" GridPane.rowIndex="4">
-                                       <GridPane.margin>
-                                          <Insets left="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="wisEdit" GridPane.columnIndex="2" GridPane.rowIndex="5">
-                                       <GridPane.margin>
-                                          <Insets left="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
-                                    <TextField fx:id="intEdit" GridPane.columnIndex="2" GridPane.rowIndex="6">
-                                       <GridPane.margin>
-                                          <Insets left="5.0" />
-                                       </GridPane.margin>
-                                    </TextField>
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <MenuButton mnemonicParsing="false" text="Race Choices" GridPane.rowIndex="2">
+                                             <items>
+                                                <RadioMenuItem mnemonicParsing="false" text="Aasimar" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Dwarf" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Elf" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Firebolg" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Genasi" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Gnome" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Goblin" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Goliath" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Halfling" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Half-Elf" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Half-Orc" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Hobgoblin" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Human" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Kenku" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Kobold" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Lizardfolk" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Orc" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Tabaxi" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Tiefling" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Triton" />
+                                                <RadioMenuItem mnemonicParsing="false" text="Yuan-ti" />
+                                             </items>
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </MenuButton>
+                                          <Label text="Race:">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Label">
+                                             <GridPane.margin>
+                                                <Insets left="130.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Label" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="130.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Sub-Race:" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <MenuButton mnemonicParsing="false" text="SubRaces" GridPane.rowIndex="2">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                                            </items>
+                                             <GridPane.margin>
+                                                <Insets left="130.0" />
+                                             </GridPane.margin>
+                                          </MenuButton>
+                                       </children>
+                                    </GridPane>
                                  </children>
                               </GridPane>
                            </children>
