@@ -17,7 +17,6 @@ public class main extends Application{
 
     @Override
     public void start(Stage primaryStage) {
-        final String iconImage = "main/dungeonSheetsico.png";
         try {
             VBox page = FXMLLoader.load(main.class.getResource("Dungeon_Sheets_Gui.fxml"));
             Scene scene = new Scene(page);

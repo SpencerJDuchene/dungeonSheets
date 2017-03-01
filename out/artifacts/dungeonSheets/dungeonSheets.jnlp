@@ -33,7 +33,7 @@
     <jar href="bundles\dungeonSheets\runtime\lib\rt.jar" size="63403273" download="eager" />
     <jar href="bundles\dungeonSheets\runtime\lib\security\US_export_policy.jar" size="3026" download="eager" />
     <jar href="bundles\dungeonSheets\runtime\lib\security\local_policy.jar" size="3527" download="eager" />
-    <jar href="dungeonSheets.jar" size="30477245" download="eager" />
+    <jar href="dungeonSheets.jar" size="30465525" download="eager" />
   </resources>
   <jfx:javafx-desc  width="600" height="400" main-class="main.main"  name="dungeonSheets" />
   <update check="background"/>
