@@ -59,15 +59,6 @@ import java.util.*;
         Stealth = getDexterity_Mod();
         Survival = getWisdom_Mod();
 
-        //TODO print skills method
-        System.out.println("Acro: " + Acrobatics + "\tAnimal: " + Animal_Handling + "\tArcana: " + Arcana +
-                "\nAthletics: " + Athletics +"\tDeception: " +  Deception + "\tHistory: " +  History+
-                "\nInsight: " + Insight + " Intimidation: " + Intimidation + "\tInvestigation: " +
-                Investigation + "\nMedicine: "  + Medicine + "\tNature: " + Nature + "\tPerception: " +
-                Perception + "\nPerfomance: " + Performance + "\tPersuasion: " + Persuasion +
-                "\tReligion: " + Religion + "\nSleight of hand: " + Sleight_of_Hand + "\tStealth: " + Stealth
-                + "\tSurvival: " + Survival);
-
     }
     //displays what the current stats are
     public void currentStats(){ //IDK HOW STRING CLASSES WORK HAHAHAHA......

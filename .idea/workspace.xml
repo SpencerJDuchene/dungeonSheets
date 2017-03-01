@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ac49eb-c7cf-4afd-9ea7-bf0bdf8bff0a" name="Default" comment="Base stats, while random, now auto load into the textfields. Launching provides players with 6 random stats.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Player/raceHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jar" afterPath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/Player/background.class" afterPath="$PROJECT_DIR$/out/production/dungeonSheets/Player/background.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/main/Controller.class" afterPath="$PROJECT_DIR$/out/production/dungeonSheets/main/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/main/main.class" afterPath="$PROJECT_DIR$/out/production/dungeonSheets/main/main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dungeonSheets.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dungeonSheets.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jnlp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player/background.java" afterPath="$PROJECT_DIR$/src/Player/background.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Controller.java" afterPath="$PROJECT_DIR$/src/main/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/main.java" afterPath="$PROJECT_DIR$/src/main/main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player/StatGen.java" afterPath="$PROJECT_DIR$/src/Player/StatGen.java" />
     </list>
     <ignored path="dungeonSheets.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,13 +32,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="447">
               <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatGen.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Player/StatGen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+              <folding>
+                <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
+                <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
+                <element signature="e#3345#3450#0" expanded="false" />
+                <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
+                <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
+                <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,11 +88,11 @@
         <option value="$PROJECT_DIR$/src/main/pageUpdate.java" />
         <option value="$PROJECT_DIR$/src/main/Dungeon_Sheets_Gui.fxml" />
         <option value="$PROJECT_DIR$/src/IO/Loading.java" />
-        <option value="$PROJECT_DIR$/src/Player/StatGen.java" />
         <option value="$PROJECT_DIR$/src/Player/raceHandler.java" />
         <option value="$PROJECT_DIR$/src/main/Controller.java" />
         <option value="$PROJECT_DIR$/src/Player/background.java" />
         <option value="$PROJECT_DIR$/src/main/main.java" />
+        <option value="$PROJECT_DIR$/src/Player/StatGen.java" />
       </list>
     </option>
   </component>
@@ -768,7 +775,7 @@
           <folding>
             <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
             <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
             <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
             <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
             <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
@@ -781,7 +788,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
           </folding>
@@ -804,7 +810,7 @@
         <state relative-caret-position="1025">
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -840,7 +846,7 @@
           <folding>
             <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
             <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
             <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
             <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
             <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
@@ -853,7 +859,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
           </folding>
@@ -876,7 +881,7 @@
         <state relative-caret-position="1025">
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -912,7 +917,7 @@
           <folding>
             <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
             <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
             <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
             <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
             <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
@@ -925,7 +930,6 @@
         <state relative-caret-position="650">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
           </folding>
@@ -948,7 +952,7 @@
         <state relative-caret-position="1025">
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -970,7 +974,7 @@
           <folding>
             <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
             <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
             <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
             <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
             <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
@@ -983,7 +987,6 @@
         <state relative-caret-position="850">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
           </folding>
@@ -1006,7 +1009,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1028,7 +1031,7 @@
           <folding>
             <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
             <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
             <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
             <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
             <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
@@ -1041,7 +1044,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
           </folding>
@@ -1064,7 +1066,7 @@
         <state relative-caret-position="175">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1086,7 +1088,7 @@
           <folding>
             <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
             <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
             <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
             <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
             <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
@@ -1106,7 +1108,7 @@
         <state relative-caret-position="175">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1118,7 +1120,7 @@
           <folding>
             <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
             <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
             <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
             <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
             <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
@@ -1139,7 +1141,7 @@
         <state relative-caret-position="175">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1151,7 +1153,7 @@
           <folding>
             <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
             <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
             <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
             <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
             <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
@@ -1194,7 +1196,6 @@
         <state relative-caret-position="-703">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
           </folding>
@@ -1228,7 +1229,7 @@
         <state relative-caret-position="125">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1263,27 +1264,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player/StatGen.java">
+    <entry file="file://$PROJECT_DIR$/src/main/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="447">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
-            <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="e#4044#4149#0" expanded="false" />
-            <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
-            <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
-            <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Player/StatGen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#currentStats#0;class#StatGen#0" expanded="false" />
+            <element signature="method#purchaseSystem#0;class#StatGen#0" expanded="false" />
+            <element signature="e#3345#3450#0" expanded="false" />
+            <element signature="method#recomendationSystem#0;class#StatGen#0" expanded="false" />
+            <element signature="method#getSpeed#0;class#StatGen#0" expanded="false" />
+            <element signature="method#getProficiency#0;class#StatGen#0" expanded="false" />
           </folding>
         </state>
       </provider>
