@@ -21,7 +21,8 @@ public class main extends Application{
             VBox page = FXMLLoader.load(main.class.getResource("Dungeon_Sheets_Gui.fxml"));
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
-            //primaryStage.getIcons().add(new Image(main.class.getResourceAsStream("res/dungeonSheetsico.png")));
+            this.getClass().getClassLoader().getResourceAsStream("main/res/dungeonsheetsico.png");
+            primaryStage.getIcons().add(new Image(main.class.getResourceAsStream("res/dungeonsheetsico.png")));
             primaryStage.setTitle("Dungeon Sheets ALPHA 0.2.5");
             primaryStage.show();
         } catch (Exception ex) {
