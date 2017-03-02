@@ -32,10 +32,8 @@ public class main extends Application{
 
     public static void main(String[] args){
         statRolls playerRolls = new statRolls();
-
         background interact = new background(); //background extends StatGen so we get the same access
         launch(args);
-
     }
 
 }

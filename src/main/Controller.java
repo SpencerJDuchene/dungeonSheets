@@ -33,7 +33,11 @@ public class Controller {
     @FXML
     public Label playerRaceLabel,playerSubRaceLabel;
     @FXML
-    public RadioMenuItem Aasimar;
+    public RadioMenuItem Aasimar,Dwarf,Elf,Firebolg,Genasi,Gnome,Goblin,Goliath;
+    @FXML
+    public RadioMenuItem Halfling,halfElf,halfOrc,Hobgoblin,Human,Kenku,Kobold,Lizardfolk;
+    @FXML
+    public RadioMenuItem Orc,Tabaxi,Tiefling,Triton,Yuan;
     @FXML
     private TextField strEdit,dexEdit,conEdit,chaEdit,wisEdit,intEdit;
     @FXML
@@ -71,7 +75,96 @@ public class Controller {
         count = 0;
         }
     //refreshes all fields for the entire gui.
-    void handleRace(ActionEvent raceAdjust){
+    @FXML
+    void handleRace(ActionEvent updateRace){
+        String race;
+        if(Aasimar.isSelected()) {
+            race = "Aasimar";
+            playerRaceLabel.setText(race);
+        }
+        if(Dwarf.isSelected()) {
+            race = "Dwarf";
+            playerRaceLabel.setText(race);
+        }
+        if(Elf.isSelected()) {
+            race = "Elf";
+            playerRaceLabel.setText(race);
+        }
+        if(Firebolg.isSelected()) {
+            race = "Firebolg";
+            playerRaceLabel.setText(race);
+        }
+        if(Genasi.isSelected()) {
+            race = "Genasi";
+            playerRaceLabel.setText(race);
+        }
+        if(Gnome.isSelected()) {
+            race = "Gnome";
+            playerRaceLabel.setText(race);
+        }
+        if(Goblin.isSelected()) {
+            race = "Goblin";
+            playerRaceLabel.setText(race);
+        }
+        if(Goliath.isSelected()) {
+            race = "Goliath";
+            playerRaceLabel.setText(race);
+        }
+        if(Halfling.isSelected()) {
+            race = "Halfling";
+            playerRaceLabel.setText(race);
+        }
+        if(halfElf.isSelected()) {
+            race = "halfElf";
+            playerRaceLabel.setText(race);
+        }
+        if(halfOrc.isSelected()) {
+            race = "halfOrc";
+            playerRaceLabel.setText(race);
+        }
+        if(Hobgoblin.isSelected()) {
+            race = "Hobgoblin";
+            playerRaceLabel.setText(race);
+        }
+        if(Human.isSelected()) {
+            race = "Human";
+            playerRaceLabel.setText(race);
+        }
+        if(Kenku.isSelected()) {
+            race = "Kenku";
+            playerRaceLabel.setText(race);
+        }
+        if(Kobold.isSelected()) {
+            race = "Kobold";
+            playerRaceLabel.setText(race);
+        }
+        if(Lizardfolk.isSelected()) {
+            race = "Lizardfolk";
+            playerRaceLabel.setText(race);
+        }
+        if(Orc.isSelected()) {
+            race = "Orc";
+            playerRaceLabel.setText(race);
+        }
+        if(Tabaxi.isSelected()) {
+            race = "Tabaxi";
+            playerRaceLabel.setText(race);
+        }
+        if(Tiefling.isSelected()) {
+            race = "Tiefling";
+            playerRaceLabel.setText(race);
+        }
+        if(Triton.isSelected()) {
+            race = "Triton";
+            playerRaceLabel.setText(race);
+        }
+        if(Yuan.isSelected()) {
+            race = "Yuan";
+            playerRaceLabel.setText(race);
+        }
+
+
+
         //handle all menu item selections
 
 

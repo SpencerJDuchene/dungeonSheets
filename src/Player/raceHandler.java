@@ -8,18 +8,9 @@ import main.Controller;
  * Created by Spencer on 3/1/2017.
  */
 public class raceHandler extends Controller {
-    public String getRace() {
-        return race;
-    }
-
-    public String getSubRace() {
-        return subRace;
-    }
     String race;
-
-    String subRace = playerSubRaceLabel.getText();
     public void handleRace(){
-        String race = getRace();
+       // String race = getRace();
         //Handle all race data
         switch(race){
             case "Aasimar":
