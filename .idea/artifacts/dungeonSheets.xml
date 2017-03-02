@@ -4,7 +4,7 @@
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="main.main" />
-        <option name="description" value="5th edition Character sheet Manager" />
+        <option name="description" value="A 5th edition character sheet manager" />
         <option name="htmlPlaceholderId" value="" />
         <option name="title" value="Dungeon Sheets" />
         <option name="vendor" value="Spencer Duchene" />
@@ -14,7 +14,9 @@
     <root id="root">
       <element id="archive" name="dungeonSheets.jar">
         <element id="module-output" name="dungeonSheets" />
-        <element id="file-copy" path="$PROJECT_DIR$/src/main/dungeonSheetsico.png" />
+        <element id="directory" name="res">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/res/dungeonsheetsico.png" />
+        </element>
       </element>
     </root>
   </artifact>
