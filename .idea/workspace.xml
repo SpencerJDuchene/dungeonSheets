@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c6389b-83a0-416e-828b-9fd215ede4ed" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dungeonsheets.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dungeonsheets.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module_dungeonsheets.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/bundles/dungeonSheets/app/dungeonSheets.cfg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/bundles/dungeonSheets/app/dungeonSheets.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/bundles/dungeonSheets/dungeonSheets.exe" afterPath="" />
@@ -168,7 +164,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/bundles/dungeonSheets/runtime/lib/sound.properties" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/bundles/dungeonSheets/runtime/lib/tzdb.dat" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/bundles/dungeonSheets/runtime/lib/tzmappings" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dungeonSheets.iws" />
     <ignored path=".idea/workspace.xml" />
