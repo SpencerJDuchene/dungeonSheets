@@ -8,32 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="bundles\dungeonSheets\app\dungeonSheets.jar" size="26324" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\charsets.jar" size="3090155" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\access-bridge-64.jar" size="188024" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\cldrdata.jar" size="3860502" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\dnsns.jar" size="8286" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\jaccess.jar" size="44516" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\jfxrt.jar" size="18218538" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\localedata.jar" size="2246277" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\nashorn.jar" size="2022531" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\sunec.jar" size="42154" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\sunjce_provider.jar" size="280161" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\sunmscapi.jar" size="32699" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\sunpkcs11.jar" size="251327" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\ext\zipfs.jar" size="68924" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\javaws.jar" size="940401" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\jce.jar" size="116446" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\jfr.jar" size="560581" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\jfxswt.jar" size="33932" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\jsse.jar" size="644628" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\management-agent.jar" size="381" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\plugin.jar" size="1922800" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\resources.jar" size="3492568" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\rt.jar" size="63403273" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\security\US_export_policy.jar" size="3026" download="eager" />
-    <jar href="bundles\dungeonSheets\runtime\lib\security\local_policy.jar" size="3527" download="eager" />
-    <jar href="dungeonSheets.jar" size="30477191" download="eager" />
+    <jar href="dungeonSheets.jar" size="25818" download="eager" />
   </resources>
   <jfx:javafx-desc  width="600" height="400" main-class="main.main"  name="dungeonSheets" />
   <update check="background"/>
