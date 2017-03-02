@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="dungeonSheets.jnlp">
   <information>
-    <title>Dungeon Sheets</title>
-    <vendor>Spencer Duchene</vendor>
-    <description>5th edition Character sheet Manager</description>
+    <title>dungeonSheets</title>
+    <vendor>Unknown</vendor>
+    <description>dungeonSheets</description>
     <offline-allowed/>
   </information>
   <resources>
