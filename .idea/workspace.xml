@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ac49eb-c7cf-4afd-9ea7-bf0bdf8bff0a" name="Default" comment="Base stats, while random, now auto load into the textfields. Launching provides players with 6 random stats.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jar" afterPath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/Player/StatGen.class" afterPath="$PROJECT_DIR$/out/production/dungeonSheets/Player/StatGen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/main/Controller.class" afterPath="$PROJECT_DIR$/out/production/dungeonSheets/main/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jnlp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player/StatGen.java" afterPath="$PROJECT_DIR$/src/Player/StatGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Controller.java" afterPath="$PROJECT_DIR$/src/main/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Dungeon_Sheets_Gui.fxml" afterPath="$PROJECT_DIR$/src/main/Dungeon_Sheets_Gui.fxml" />
     </list>
     <ignored path="dungeonSheets.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,7 +112,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-10912">
-              <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+              <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1256,7 +1250,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10912">
-          <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
           <folding />
         </state>
       </provider>
