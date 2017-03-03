@@ -566,6 +566,7 @@ public class Controller {
         SurviveLabel.setText(WisMod.toString());
     }
 
+    //functions to prevent repetition of the same crap 100 times.
     void increaseStrength(int x){
         int charisma;
         charisma = statCreate.getBaseStrength();

@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ac49eb-c7cf-4afd-9ea7-bf0bdf8bff0a" name="Default" comment="Base stats, while random, now auto load into the textfields. Launching provides players with 6 random stats.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Dungeon_Sheets_Gui.fxml" afterPath="$PROJECT_DIR$/src/main/Dungeon_Sheets_Gui.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Controller.java" afterPath="$PROJECT_DIR$/src/main/Controller.java" />
     </list>
     <ignored path="dungeonSheets.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="446" column="49" selection-start-line="446" selection-start-column="49" selection-end-line="446" selection-end-column="49" />
+            <state relative-caret-position="249">
+              <caret line="568" column="54" selection-start-line="568" selection-start-column="54" selection-end-line="568" selection-end-column="54" />
               <folding>
                 <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
                 <element signature="method#handleRace#0;class#Controller#0" expanded="false" />
@@ -43,6 +43,12 @@
                 <element signature="method#handleSubRace#0;class#Controller#0" expanded="false" />
                 <element signature="e#15891#15897#0" expanded="false" />
                 <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+                <element signature="method#increaseStrength#0;class#Controller#0" expanded="false" />
+                <element signature="method#increaseDexterity#0;class#Controller#0" expanded="false" />
+                <element signature="method#increaseConstitution#0;class#Controller#0" expanded="false" />
+                <element signature="method#increaseCharisma#0;class#Controller#0" expanded="false" />
+                <element signature="method#increaseWisdom#0;class#Controller#0" expanded="false" />
+                <element signature="method#increaseIntelligence#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -800,7 +806,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -885,6 +891,12 @@
             <element signature="method#handleSubRace#0;class#Controller#0" expanded="false" />
             <element signature="e#15891#15897#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseStrength#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseDexterity#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseConstitution#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseCharisma#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseWisdom#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseIntelligence#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -953,6 +965,12 @@
             <element signature="method#handleSubRace#0;class#Controller#0" expanded="false" />
             <element signature="e#15891#15897#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseStrength#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseDexterity#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseConstitution#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseCharisma#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseWisdom#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseIntelligence#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1014,6 +1032,12 @@
             <element signature="method#handleSubRace#0;class#Controller#0" expanded="false" />
             <element signature="e#15891#15897#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseStrength#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseDexterity#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseConstitution#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseCharisma#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseWisdom#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseIntelligence#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1075,6 +1099,12 @@
             <element signature="method#handleSubRace#0;class#Controller#0" expanded="false" />
             <element signature="e#15891#15897#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseStrength#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseDexterity#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseConstitution#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseCharisma#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseWisdom#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseIntelligence#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1314,8 +1344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="446" column="49" selection-start-line="446" selection-start-column="49" selection-end-line="446" selection-end-column="49" />
+        <state relative-caret-position="249">
+          <caret line="568" column="54" selection-start-line="568" selection-start-column="54" selection-end-line="568" selection-end-column="54" />
           <folding>
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
             <element signature="method#handleRace#0;class#Controller#0" expanded="false" />
@@ -1323,6 +1353,12 @@
             <element signature="method#handleSubRace#0;class#Controller#0" expanded="false" />
             <element signature="e#15891#15897#0" expanded="false" />
             <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseStrength#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseDexterity#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseConstitution#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseCharisma#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseWisdom#0;class#Controller#0" expanded="false" />
+            <element signature="method#increaseIntelligence#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
