@@ -33,11 +33,13 @@ public class Controller {
     @FXML
     public Label playerRaceLabel,playerSubRaceLabel;
     @FXML
-    public RadioMenuItem Aasimar,Dwarf,Elf,Firebolg,Genasi,Gnome,Goblin,Goliath;
+    public RadioMenuItem Aasimar,Dragonborn,Dwarf,Elf,Firebolg,Genasi,Gnome,Goblin,Goliath;
     @FXML
     public RadioMenuItem Halfling,halfElf,halfOrc,Hobgoblin,Human,Kenku,Kobold,Lizardfolk;
     @FXML
     public RadioMenuItem Orc,Tabaxi,Tiefling,Triton,Yuan;
+    @FXML
+    public RadioMenuItem subRace1,subRace2,subRace3,subRace4,subRace5,subRace6,subRace7,subRace8,subRace9;
     @FXML
     private TextField strEdit,dexEdit,conEdit,chaEdit,wisEdit,intEdit;
     @FXML
@@ -78,28 +80,117 @@ public class Controller {
     @FXML
     void handleRace(ActionEvent updateRace){
         String race;
+        //defaults the first choice to be selected
+
+        subRace1.setSelected(true);
         if(Aasimar.isSelected()) {
             race = "Aasimar";
+            playerRaceLabel.setText(race);
+            //by doing this we allow the menu to change based on the base race selection
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace3.setVisible(true);
+            subRace4.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setText("Protector");
+            subRace3.setText("Scourge");
+            subRace4.setText("Fallen");
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
+        }
+        if(Dragonborn.isSelected()){
+            race = "Dragonborn";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Dwarf.isSelected()) {
             race = "Dwarf";
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace3.setVisible(true);
+            subRace1.setText("Hill");
+            subRace2.setText("Mountain");
+            subRace3.setText("Grey (Duergar)");
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Elf.isSelected()) {
             race = "Elf";
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace3.setVisible(true);
+            subRace4.setVisible(true);
+            subRace1.setText("High");
+            subRace2.setText("Wood");
+            subRace3.setText("Drow");
+            subRace4.setText("Eladrin");
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Firebolg.isSelected()) {
             race = "Firebolg";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Genasi.isSelected()) {
             race = "Genasi";
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace3.setVisible(true);
+            subRace4.setVisible(true);
+            subRace1.setText("Air");
+            subRace2.setText("Earth");
+            subRace3.setText("Fire");
+            subRace4.setText("Water");
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Gnome.isSelected()) {
             race = "Gnome";
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace3.setVisible(true);
+            //subRace1.set
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Goblin.isSelected()) {
