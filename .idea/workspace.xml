@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ac49eb-c7cf-4afd-9ea7-bf0bdf8bff0a" name="Default" comment="Base stats, while random, now auto load into the textfields. Launching provides players with 6 random stats.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jar" afterPath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/Player/raceHandler.class" afterPath="$PROJECT_DIR$/out/production/dungeonSheets/Player/raceHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dungeonSheets/main/Controller.class" afterPath="$PROJECT_DIR$/out/production/dungeonSheets/main/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/dungeonSheets/dungeonSheets.jnlp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player/raceHandler.java" afterPath="$PROJECT_DIR$/src/Player/raceHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Controller.java" afterPath="$PROJECT_DIR$/src/main/Controller.java" />
     </list>
     <ignored path="dungeonSheets.iws" />
@@ -788,7 +783,7 @@
     <option name="totallyTimeSpent" value="5826000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1102" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />

@@ -80,6 +80,8 @@ public class Controller {
     @FXML
     void handleRace(ActionEvent updateRace){
         String race;
+        raceHandler raceInstance = new raceHandler();
+
         //defaults the first choice to be selected
 
         subRace1.setSelected(true);
@@ -100,6 +102,7 @@ public class Controller {
             subRace7.setVisible(false);
             subRace8.setVisible(false);
             subRace9.setVisible(false);
+            raceInstance.setSubRaces(race);
         }
         if(Dragonborn.isSelected()){
             race = "Dragonborn";
@@ -114,6 +117,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Dwarf.isSelected()) {
             race = "Dwarf";
@@ -130,6 +134,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Elf.isSelected()) {
             race = "Elf";
@@ -147,6 +152,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Firebolg.isSelected()) {
             race = "Firebolg";
@@ -161,6 +167,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Genasi.isSelected()) {
             race = "Genasi";
@@ -178,6 +185,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Gnome.isSelected()) {
             race = "Gnome";
@@ -194,6 +202,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Goblin.isSelected()) {
             race = "Goblin";
@@ -207,7 +216,7 @@ public class Controller {
             subRace7.setVisible(false);
             subRace8.setVisible(false);
             subRace9.setVisible(false);
-
+            raceInstance.setSubRaces(race);
             playerRaceLabel.setText(race);
         }
         if(Goliath.isSelected()) {
@@ -223,6 +232,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Halfling.isSelected()) {
             race = "Halfling";
@@ -239,6 +249,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(halfElf.isSelected()) {
             race = "halfElf";
@@ -256,6 +267,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(halfOrc.isSelected()) {
             race = "halfOrc";
@@ -270,6 +282,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Hobgoblin.isSelected()) {
             race = "Hobgoblin";
@@ -284,6 +297,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Human.isSelected()) {
             race = "Human";
@@ -299,6 +313,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Kenku.isSelected()) {
             race = "Kenku";
@@ -313,6 +328,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Kobold.isSelected()) {
             race = "Kobold";
@@ -327,6 +343,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Lizardfolk.isSelected()) {
             race = "Lizardfolk";
@@ -341,6 +358,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Orc.isSelected()) {
             race = "Orc";
@@ -355,6 +373,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Tabaxi.isSelected()) {
             race = "Tabaxi";
@@ -369,6 +388,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Tiefling.isSelected()) {
             race = "Tiefling";
@@ -385,6 +405,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Triton.isSelected()) {
             race = "Triton";
@@ -399,6 +420,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
         if(Yuan.isSelected()) {
             race = "Yuan";
@@ -413,6 +435,7 @@ public class Controller {
             subRace8.setVisible(false);
             subRace9.setVisible(false);
             playerRaceLabel.setText(race);
+            raceInstance.setSubRaces(race);
         }
 
 
