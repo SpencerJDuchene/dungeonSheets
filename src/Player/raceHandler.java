@@ -9,10 +9,7 @@ import main.Controller;
  */
 public class raceHandler extends Controller {
     public void setSubRaces(String race){
-        if(race == "Aasimar"){
-           // subRace1.setText("please");
-
-        }
+        //wont check against current selection? idk why fix later
     }
 
 }
