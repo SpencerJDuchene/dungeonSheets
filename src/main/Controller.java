@@ -184,7 +184,9 @@ public class Controller {
             subRace1.setVisible(true);
             subRace2.setVisible(true);
             subRace3.setVisible(true);
-            //subRace1.set
+            subRace1.setText("Forest");
+            subRace2.setText("Rock");
+            subRace3.setText("Deep");
             subRace4.setVisible(false);
             subRace5.setVisible(false);
             subRace6.setVisible(false);
@@ -195,62 +197,221 @@ public class Controller {
         }
         if(Goblin.isSelected()) {
             race = "Goblin";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
+
             playerRaceLabel.setText(race);
         }
         if(Goliath.isSelected()) {
             race = "Goliath";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Halfling.isSelected()) {
             race = "Halfling";
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace3.setVisible(true);
+            subRace1.setText("Lightfoot");
+            subRace2.setText("Stout");
+            subRace3.setText("Ghostwise");
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(halfElf.isSelected()) {
             race = "halfElf";
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace3.setVisible(true);
+            subRace4.setVisible(true);
+            subRace1.setText("Half-Wood");
+            subRace2.setText("Half-Moon/Sun");
+            subRace3.setText("Half-Drow");
+            subRace4.setText("Half-Aquatic");
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(halfOrc.isSelected()) {
             race = "halfOrc";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Hobgoblin.isSelected()) {
             race = "Hobgoblin";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Human.isSelected()) {
             race = "Human";
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setText("Variant");
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Kenku.isSelected()) {
             race = "Kenku";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Kobold.isSelected()) {
             race = "Kobold";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Lizardfolk.isSelected()) {
             race = "Lizardfolk";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Orc.isSelected()) {
             race = "Orc";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Tabaxi.isSelected()) {
             race = "Tabaxi";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Tiefling.isSelected()) {
             race = "Tiefling";
+            subRace1.setVisible(true);
+            subRace2.setVisible(true);
+            subRace3.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setText("Variant");
+            subRace3.setText("Feral");
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Triton.isSelected()) {
             race = "Triton";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
         if(Yuan.isSelected()) {
             race = "Yuan";
+            subRace1.setVisible(true);
+            subRace1.setText("None");
+            subRace2.setVisible(false);
+            subRace3.setVisible(false);
+            subRace4.setVisible(false);
+            subRace5.setVisible(false);
+            subRace6.setVisible(false);
+            subRace7.setVisible(false);
+            subRace8.setVisible(false);
+            subRace9.setVisible(false);
             playerRaceLabel.setText(race);
         }
 
