@@ -421,19 +421,19 @@
                                                 <Insets left="130.0" />
                                              </GridPane.margin>
                                              <items>
-                                                <RadioMenuItem fx:id="subRace1" mnemonicParsing="false" text="Unspecified Action">
+                                                <RadioMenuItem fx:id="subRace1" mnemonicParsing="false" onAction="#handleSubRace" text="No Race Selected">
                                                    <toggleGroup>
                                                       <ToggleGroup fx:id="subRace" />
                                                    </toggleGroup>
                                                 </RadioMenuItem>
-                                                <RadioMenuItem fx:id="subRace2" mnemonicParsing="false" text="Unspecified Action" toggleGroup="$subRace" />
-                                                <RadioMenuItem fx:id="subRace3" mnemonicParsing="false" text="Unspecified Action" toggleGroup="$subRace" />
-                                                <RadioMenuItem fx:id="subRace4" mnemonicParsing="false" text="Unspecified Action" toggleGroup="$subRace" />
-                                                <RadioMenuItem fx:id="subRace5" mnemonicParsing="false" text="Unspecified Action" toggleGroup="$subRace" />
-                                                <RadioMenuItem fx:id="subRace6" mnemonicParsing="false" text="Unspecified Action" toggleGroup="$subRace" />
-                                                <RadioMenuItem fx:id="subRace7" mnemonicParsing="false" text="Unspecified Action" toggleGroup="$subRace" />
-                                                <RadioMenuItem fx:id="subRace8" mnemonicParsing="false" text="Unspecified Action" toggleGroup="$subRace" />
-                                                <RadioMenuItem fx:id="subRace9" mnemonicParsing="false" text="Unspecified Action" toggleGroup="$subRace" />
+                                                <RadioMenuItem fx:id="subRace2" mnemonicParsing="false" onAction="#handleSubRace" text="Unspecified Action" toggleGroup="$subRace" visible="false" />
+                                                <RadioMenuItem fx:id="subRace3" mnemonicParsing="false" onAction="#handleSubRace" text="Unspecified Action" toggleGroup="$subRace" visible="false" />
+                                                <RadioMenuItem fx:id="subRace4" mnemonicParsing="false" onAction="#handleSubRace" text="Unspecified Action" toggleGroup="$subRace" visible="false" />
+                                                <RadioMenuItem fx:id="subRace5" mnemonicParsing="false" onAction="#handleSubRace" text="Unspecified Action" toggleGroup="$subRace" visible="false" />
+                                                <RadioMenuItem fx:id="subRace6" mnemonicParsing="false" onAction="#handleSubRace" text="Unspecified Action" toggleGroup="$subRace" visible="false" />
+                                                <RadioMenuItem fx:id="subRace7" mnemonicParsing="false" onAction="#handleSubRace" text="Unspecified Action" toggleGroup="$subRace" visible="false" />
+                                                <RadioMenuItem fx:id="subRace8" mnemonicParsing="false" onAction="#handleSubRace" text="Unspecified Action" toggleGroup="$subRace" visible="false" />
+                                                <RadioMenuItem fx:id="subRace9" mnemonicParsing="false" onAction="#handleSubRace" text="Unspecified Action" toggleGroup="$subRace" visible="false" />
                                              </items>
                                           </MenuButton>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stat Changes" GridPane.columnIndex="1" />
