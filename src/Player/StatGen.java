@@ -16,7 +16,13 @@ import java.util.*;
     protected int Hit_Dice, Initiative, Armor_Class, Speed, experience;
     protected int proficiency;
     protected int Strength_Mod, Dexterity_Mod,Constitution_Mod,Wisdom_Mod,Intelligence_Mod,Charisma_Mod;
+    protected int baseStrength,baseDexterity,baseConstitution,baseWisdom,baseCharisma,baseIntelligence;
 
+
+    public void statInitialize(){
+        initialiazeNonBaseStats();
+        GenAll();
+    }
     public void GenAll(){
         statModGen();
         getSkills();
@@ -24,7 +30,6 @@ import java.util.*;
         getArmor_Class();
         getInitiative();
     }
-    //TODO Genrate getters and setters
     //gets, and updates if need be, the Modifiers for the base player stats.
     public void statModGen(){
         //this class gets the modifiers of stat
@@ -60,14 +65,14 @@ import java.util.*;
         Survival = getWisdom_Mod();
 
     }
-    //displays what the current stats are
-    public void currentStats(){ //IDK HOW STRING CLASSES WORK HAHAHAHA......
-        System.out.println("Strength: " + getStrength() + "("+ getStrength_Mod() + ")\t\tDexterity: " + getDexterity() +
-                "("+ getDexterity_Mod() + ")");
-        System.out.println("Constitution: " + getConstitution() + "("+ getConstitution_Mod() + ")\tCharisma: " + getCharisma() +
-                "("+ getCharisma_Mod() + ")");
-        System.out.println("Wisdom: " + getWisdom() + "("+ getWisdom_Mod() + ")\t\t\tIntelligence: " + getIntelligence() +
-                "("+ getIntelligence_Mod() + ")");
+    //sets the stats to be the base stats
+    public void initialiazeNonBaseStats(){
+        setStrength(getBaseStrength());
+        setDexterity(getBaseDexterity());
+        setConstitution(getBaseConstitution());
+        setCharisma(getBaseCharisma());
+        setWisdom(getBaseWisdom());
+        setIntelligence(getBaseIntelligence());
     }
     //allows users to use the point buy system in character creation
     public void purchaseSystem(){
@@ -78,6 +83,54 @@ import java.util.*;
     public void recomendationSystem(){
         //getClassclass to check player class, then get getRace to check race, use this to suggest best for class or
         //to suggest best for balanced stats.
+    }
+
+    public int getBaseStrength() {
+        return baseStrength;
+    }
+
+    public void setBaseStrength(int baseStrength) {
+        this.baseStrength = baseStrength;
+    }
+
+    public int getBaseDexterity() {
+        return baseDexterity;
+    }
+
+    public void setBaseDexterity(int baseDexterity) {
+        this.baseDexterity = baseDexterity;
+    }
+
+    public int getBaseConstitution() {
+        return baseConstitution;
+    }
+
+    public void setBaseConstitution(int baseConstitution) {
+        this.baseConstitution = baseConstitution;
+    }
+
+    public int getBaseWisdom() {
+        return baseWisdom;
+    }
+
+    public void setBaseWisdom(int baseWisdom) {
+        this.baseWisdom = baseWisdom;
+    }
+
+    public int getBaseCharisma() {
+        return baseCharisma;
+    }
+
+    public void setBaseCharisma(int baseCharisma) {
+        this.baseCharisma = baseCharisma;
+    }
+
+    public int getBaseIntelligence() {
+        return baseIntelligence;
+    }
+
+    public void setBaseIntelligence(int baseIntelligence) {
+        this.baseIntelligence = baseIntelligence;
     }
 
     public int getStrength() {
@@ -115,7 +168,6 @@ import java.util.*;
     public int getIntelligence() {
         return Intelligence;
     }
-
 
     public void setIntelligence(int intelligence) {
         Intelligence = intelligence;
@@ -217,6 +269,7 @@ import java.util.*;
     public void setSpeed(int speed) {
         Speed = speed;
     }
+
     public void setProficiency(int proficiency) {
         this.proficiency = proficiency;
     }

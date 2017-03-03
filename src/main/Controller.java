@@ -59,13 +59,13 @@ public class Controller {
         while (count < 1) {
 
                 try {
-                    statCreate.setStrength(Integer.parseInt(StrDisplay.getText()));
-                    statCreate.setDexterity(Integer.parseInt(DexDisplay.getText()));
-                    statCreate.setConstitution(Integer.parseInt(ConDisplay.getText()));
-                    statCreate.setIntelligence(Integer.parseInt(IntDisplay.getText()));
-                    statCreate.setCharisma(Integer.parseInt(ChaDisplay.getText()));
-                    statCreate.setWisdom(Integer.parseInt(WisDisplay.getText()));
-                    statCreate.GenAll();
+                    statCreate.setBaseStrength(Integer.parseInt(StrDisplay.getText()));
+                    statCreate.setBaseDexterity(Integer.parseInt(DexDisplay.getText()));
+                    statCreate.setBaseConstitution(Integer.parseInt(ConDisplay.getText()));
+                    statCreate.setBaseIntelligence(Integer.parseInt(IntDisplay.getText()));
+                    statCreate.setBaseCharisma(Integer.parseInt(ChaDisplay.getText()));
+                    statCreate.setBaseWisdom(Integer.parseInt(WisDisplay.getText()));
+                    statCreate.statInitialize();
                     refresh();
                     //System.out.println("test");
                 }
@@ -447,11 +447,35 @@ public class Controller {
     void handleSubRace(ActionEvent updateSubRace){
         int strength,dexterity,constitution,charisma,wisdom,intelligence;
         if(race == "Aasimar"){
-            if(subRace1.isSelected()){
-                charisma = statCreate.getCharisma();
-                charisma = charisma + 2;
-                statCreate.setCharisma(charisma);
-                //TODO prevent repeat clicks causing stat to increase, try calling base stat then editing current stat
+            if(subRace1.isSelected()){ //base
+                //reset all stats to base stats.
+                statCreate.initialiazeNonBaseStats();
+                //TODO fix issue where updating the stat after changing the race can allow stats to increment
+                increaseCharisma(2);
+                statCreate.GenAll();
+                refresh();
+            }
+            if(subRace2.isSelected()){ //protector
+                //reset all stats to base stats.
+                statCreate.initialiazeNonBaseStats();
+                increaseCharisma(2);
+                increaseWisdom(1);
+                statCreate.GenAll();
+                refresh();
+            }
+            if(subRace3.isSelected()){ //scourge
+                //reset all stats to base stats.
+                statCreate.initialiazeNonBaseStats();
+                increaseCharisma(2);
+                increaseConstitution(1);
+                statCreate.GenAll();
+                refresh();
+            }
+            if(subRace4.isSelected()){ //fallen
+                //reset all stats to base stats.
+                statCreate.initialiazeNonBaseStats();
+                increaseCharisma(2);
+                increaseStrength(1);
                 statCreate.GenAll();
                 refresh();
             }
@@ -540,6 +564,43 @@ public class Controller {
         SleightLabel.setText(DexMod.toString());
         StealthLabel.setText(DexMod.toString());
         SurviveLabel.setText(WisMod.toString());
+    }
+
+    void increaseStrength(int x){
+        int charisma;
+        charisma = statCreate.getBaseStrength();
+        charisma = charisma + x;
+        statCreate.setStrength(charisma);
+    }
+    void increaseDexterity(int x){
+        int charisma;
+        charisma = statCreate.getBaseDexterity();
+        charisma = charisma + x;
+        statCreate.setDexterity(charisma);
+    }
+    void increaseConstitution(int x){
+        int charisma;
+        charisma = statCreate.getBaseConstitution();
+        charisma = charisma + x;
+        statCreate.setConstitution(charisma);
+    }
+    void increaseCharisma(int x){
+        int charisma;
+        charisma = statCreate.getBaseCharisma();
+        charisma = charisma + x;
+        statCreate.setCharisma(charisma);
+    }
+    void increaseWisdom(int x){
+        int charisma;
+        charisma = statCreate.getBaseWisdom();
+        charisma = charisma + x;
+        statCreate.setWisdom(charisma);
+    }
+    void increaseIntelligence(int x){
+        int charisma;
+        charisma = statCreate.getBaseIntelligence();
+        charisma = charisma + x;
+        statCreate.setIntelligence(charisma);
     }
 
 }
