@@ -4,7 +4,9 @@ package main;
  */
 
 
+import com.sun.org.apache.regexp.internal.RE;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.scene.control.*;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,9 +18,10 @@ import javafx.scene.control.TextField;
 
 public class Controller {
     //cant remember if making this global is bad or not
+    @FXML
     StatGen statCreate = new StatGen();
     int count = 0;
-    String race;
+
     @FXML
     private TextField StrDisplay, DexDisplay,ConDisplay,ChaDisplay,WisDisplay,IntDisplay;
     @FXML
@@ -32,9 +35,9 @@ public class Controller {
     @FXML
     private Label SleightLabel,StealthLabel,SurviveLabel;
     @FXML
-    public CheckBox acroProf, anmlProf, arcanaProf,athletProf,decepProf,natureProf,percepProf, performProf, persuaProf;
+    private CheckBox acroProf, anmlProf, arcanaProf,athletProf,decepProf,natureProf,percepProf, performProf, persuaProf;
     @FXML
-    public CheckBox histProf,insightProf,initimiProf,investProf,mediProf,reliProf,sohProf,stealthProf,surviveProf;
+    private CheckBox histProf,insightProf,investProf,mediProf,reliProf,sohProf,stealthProf,surviveProf, initimiProf;
     @FXML
     private TextField strEdit,dexEdit,conEdit,chaEdit,wisEdit,intEdit;
     @FXML
@@ -42,8 +45,7 @@ public class Controller {
     @FXML
     private javafx.scene.control.CheckBox updateCheck;
 
-
-
+    
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resourceBundle;
     @FXML // URL location of the FXML file that was given to the FXMLLoader
@@ -135,83 +137,154 @@ public class Controller {
         SurviveLabel.setText(WisMod.toString());
     }
     @FXML
-    void updateCheck(ActionEvent blah){
+    void updateCheck(ActionEvent reNameMe){
+        Integer alter = 0;
         if(acroProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(anmlProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(arcanaProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(athletProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(decepProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(natureProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(percepProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(performProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(persuaProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(histProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(insightProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(initimiProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(investProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(mediProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(reliProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(sohProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(stealthProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
-        }if(surviveProf.isSelected()){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()+ statCreate.getProficiency());
+            alter = statCreate.getDexterity_Mod() + statCreate.getProficiency();
+            acroLabel.setText(alter.toString());
         }
-
-        //undo the profficeny bonus when unchecks
-
-        if(acroProf.isSelected() == false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(anmlProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(arcanaProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(athletProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(decepProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(natureProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(percepProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(performProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(persuaProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(histProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(insightProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(initimiProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(investProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(mediProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(reliProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(sohProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(stealthProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
-        }if(surviveProf.isSelected()== false ){
-            statCreate.setAcrobatics(statCreate.getAcrobatics()- statCreate.getProficiency());
+        if(anmlProf.isSelected()){
+            alter = statCreate.getCharisma_Mod() + statCreate.getProficiency();
+            AnmlLabel.setText(alter.toString());
         }
+        if(arcanaProf.isSelected()){
+            alter = statCreate.getIntelligence_Mod() + statCreate.getProficiency();
+            ArcanaLabel.setText(alter.toString());
+        }
+        if(athletProf.isSelected()){
+            alter = statCreate.getStrength_Mod() + statCreate.getProficiency();
+            athlLabel.setText(alter.toString());
+        }
+        if(decepProf.isSelected()){
+            alter = statCreate.getCharisma_Mod() + statCreate.getProficiency();
+            DecepLabel.setText(alter.toString());
+        }
+        if(natureProf.isSelected()){
+            alter = statCreate.getIntelligence_Mod() + statCreate.getProficiency();
+            NatureLabel.setText(alter.toString());
+        }
+        if(percepProf.isSelected()){
+            alter = statCreate.getWisdom_Mod() + statCreate.getProficiency();
+            PercepLabel.setText(alter.toString());
+        }
+        if(performProf.isSelected()){
+            alter = statCreate.getCharisma_Mod() + statCreate.getProficiency();
+            PerformLabel.setText(alter.toString());
+        }
+        if(persuaProf.isSelected()){
+            alter = statCreate.getCharisma_Mod() + statCreate.getProficiency();
+            PersuadeLabel.setText(alter.toString());
+        }
+        if(histProf.isSelected()){
+            alter = statCreate.getIntelligence_Mod() + statCreate.getProficiency();
+            HistLabel.setText(alter.toString());
+        }
+        if(insightProf.isSelected()){
+            alter = statCreate.getWisdom_Mod() + statCreate.getProficiency();
+            InsightLabel.setText(alter.toString());
+        }
+        if(initimiProf.isSelected()){
+            alter = statCreate.getCharisma_Mod() + statCreate.getProficiency();
+            IntimidLabel.setText(alter.toString());
+        }
+        if(investProf.isSelected()){
+            alter = statCreate.getIntelligence_Mod() + statCreate.getProficiency();
+            InvestLabel.setText(alter.toString());
+        }
+        if(mediProf.isSelected()){
+            alter = statCreate.getWisdom_Mod() + statCreate.getProficiency();
+            MediLabel.setText(alter.toString());
+        }
+        if(reliProf.isSelected()){
+            alter = statCreate.getIntelligence_Mod() + statCreate.getProficiency();
+            ReliLabel.setText(alter.toString());
+        }
+        if(sohProf.isSelected()){
+            alter = statCreate.getDexterity_Mod() + statCreate.getProficiency();
+            SleightLabel.setText(alter.toString());
+        }
+        if(stealthProf.isSelected()){
+            alter = statCreate.getDexterity_Mod() + statCreate.getProficiency();
+            StealthLabel.setText(alter.toString());
+        }
+        if(surviveProf.isSelected()){
+            alter = statCreate.getWisdom_Mod() + statCreate.getProficiency();
+            SurviveLabel.setText(alter.toString());
+        }
+        //Undo the bonus when unchecked
+        if(acroProf.isSelected() == false){
+            alter = statCreate.getDexterity_Mod();
+            acroLabel.setText(alter.toString());
+        }
+        if(anmlProf.isSelected() == false){
+            alter = statCreate.getCharisma_Mod();
+            AnmlLabel.setText(alter.toString());
+        }
+        if(arcanaProf.isSelected() == false){
+            alter = statCreate.getIntelligence_Mod();
+            ArcanaLabel.setText(alter.toString());
+        }
+        if(athletProf.isSelected() == false){
+            alter = statCreate.getStrength_Mod();
+            athlLabel.setText(alter.toString());
+        }
+        if(decepProf.isSelected() == false){
+            alter = statCreate.getCharisma_Mod();
+            DecepLabel.setText(alter.toString());
+        }
+        if(natureProf.isSelected() == false){
+            alter = statCreate.getIntelligence_Mod();
+            NatureLabel.setText(alter.toString());
+        }
+        if(percepProf.isSelected() == false){
+            alter = statCreate.getWisdom_Mod();
+            PercepLabel.setText(alter.toString());
+        }
+        if(performProf.isSelected() == false){
+            alter = statCreate.getCharisma_Mod();
+            PerformLabel.setText(alter.toString());
+        }
+        if(persuaProf.isSelected() == false){
+            alter = statCreate.getCharisma_Mod();
+            PersuadeLabel.setText(alter.toString());
+        }
+        if(histProf.isSelected() == false){
+            alter = statCreate.getIntelligence_Mod();
+            HistLabel.setText(alter.toString());
+        }
+        if(insightProf.isSelected() == false){
+            alter = statCreate.getWisdom_Mod();
+            InsightLabel.setText(alter.toString());
+        }
+        if(initimiProf.isSelected() == false){
+            alter = statCreate.getCharisma_Mod();
+            IntimidLabel.setText(alter.toString());
+        }
+        if(investProf.isSelected() == false){
+            alter = statCreate.getIntelligence_Mod();
+            InvestLabel.setText(alter.toString());
+        }
+        if(mediProf.isSelected() == false){
+            alter = statCreate.getWisdom_Mod();
+            MediLabel.setText(alter.toString());
+        }
+        if(reliProf.isSelected() == false){
+            alter = statCreate.getIntelligence_Mod();
+            ReliLabel.setText(alter.toString());
+        }
+        if(sohProf.isSelected() == false){
+            alter = statCreate.getDexterity_Mod();
+            SleightLabel.setText(alter.toString());
+        }
+        if(stealthProf.isSelected() == false){
+            alter = statCreate.getDexterity_Mod();
+            StealthLabel.setText(alter.toString());
+        }
+        if(surviveProf.isSelected() == false){
+            alter = statCreate.getWisdom_Mod();
+            SurviveLabel.setText(alter.toString());
+        }
+        //undo prof. bonus when unchecked
+
         }
     }
