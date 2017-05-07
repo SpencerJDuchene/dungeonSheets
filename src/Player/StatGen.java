@@ -8,45 +8,60 @@ import java.util.*;
  *      controlling the stats dependent on them. Including: Skills, Saving Throws, Modifiers, HP, TEMP HP
  *      HIT Dice, Death Saves, Proficiency,Initiative, Armor Class, Speed, ETC...
  */ public class StatGen {
+     //Minimize editing of "Base" stats in order to keep data more consistent across the app.
+    protected int BaseStrength,BaseDexterity,BaseConstitution,BaseWisdom,BaseIntelligence,BaseCharisma;
+    //Initialize these with the base stats, then update with other data.
     protected int Strength,Dexterity,Constitution,Wisdom,Intelligence,Charisma;
+    protected int Strength_Mod, Dexterity_Mod,Constitution_Mod,Wisdom_Mod,Intelligence_Mod,Charisma_Mod;
     protected int Acrobatics, Animal_Handling, Arcana, Athletics, Deception, History;
     protected int Insight, Intimidation,Investigation,Medicine,Nature,Perception,Performance;
     protected int Persuasion,Religion,Sleight_of_Hand,Stealth,Survival;
+    //This data will need to change on a character load.
     protected int Player_Level = 1;
-    protected int Hit_Dice, Initiative, Armor_Class, Speed, experience;
-    protected int proficiency;
-    protected int Strength_Mod, Dexterity_Mod,Constitution_Mod,Wisdom_Mod,Intelligence_Mod,Charisma_Mod;
-    protected int baseStrength,baseDexterity,baseConstitution,baseWisdom,baseCharisma,baseIntelligence;
+    protected int Hit_Dice, Initiative, Armor_Class, Speed, experience, proficiency;
 
 
-    public void statInitialize(){
-        initialiazeNonBaseStats();
-        GenAll();
+    //This function will create 1 random stat, (a 3d6 roll)
+    int threeDSix(){
+        Random roll = new Random();
+        int first = roll.nextInt(6);
+        int second = roll.nextInt(6);
+        int third = roll.nextInt(6);
+        return (first + second + third);
     }
-    public void GenAll(){
-        statModGen();
-        getSkills();
-        getProficiency();
-        getArmor_Class();
-        getInitiative();
+    // this function will load all stats to a random number 3-18
+    void randomStats(){
+        setBaseStrength(threeDSix());
+        setBaseDexterity(threeDSix());
+        setBaseConstitution(threeDSix());
+        setBaseCharisma(threeDSix());
+        setBaseIntelligence(threeDSix());
+        setBaseWisdom(threeDSix());
     }
-    //gets, and updates if need be, the Modifiers for the base player stats.
-    public void statModGen(){
-        //this class gets the modifiers of stat
-        //mod = 1/2 Stat  - 5
-        Strength_Mod = ((getStrength()/2) - 5);
-        Dexterity_Mod = ((getDexterity()/2) - 5);
-        Constitution_Mod = ((getConstitution()/2) - 5);
-        Charisma_Mod = ((getCharisma()/2) - 5);
-        Wisdom_Mod = ((getWisdom()/2) - 5);
-        Intelligence_Mod = ((getIntelligence()/2) - 5);
+    //This function initializes the primary stats
+    void primaryStatLoader(){
+        Strength = getBaseStrength();
+        Dexterity = getBaseDexterity();
+        Constitution = getBaseConstitution();
+        Charisma = getBaseCharisma();
+        Wisdom = getBaseWisdom();
+        Intelligence = getBaseIntelligence();
     }
-    //handles skill stat generation
-    public void getSkills(){
-        //TODO create loop to check for proffiecency in a skill; do this in another method
-        //TODO verify that the proper stat mods are used for skills
+    //this function initializes all the modifiers
+    void modifierLoader(){
+
+        Strength_Mod = (getBaseStrength()/2) - 5;
+        Dexterity_Mod = (getBaseDexterity()/2) - 5;
+        Constitution_Mod = (getBaseConstitution()/2) - 5;
+        Charisma_Mod = (getBaseCharisma()/2) - 5;
+        Wisdom_Mod = (getBaseWisdom()/2) - 5;
+        Intelligence_Mod = (getBaseIntelligence()/2) - 5;
+    }
+    //this function initializes all the skills
+    void skillLoader(){
+        //add a profficiency check call into this
         Acrobatics = getDexterity_Mod();
-        Animal_Handling = getCharisma_Mod();
+        Animal_Handling = getWisdom_Mod();
         Arcana = getIntelligence_Mod();
         Athletics = getStrength_Mod();
         Deception = getCharisma_Mod();
@@ -54,83 +69,72 @@ import java.util.*;
         Insight = getWisdom_Mod();
         Intimidation = getCharisma_Mod();
         Investigation = getIntelligence_Mod();
-        Medicine = getIntelligence_Mod();
-        Nature = getWisdom_Mod();
+        Medicine = getWisdom_Mod();
+        Nature = getIntelligence_Mod();
         Perception = getWisdom_Mod();
         Performance = getCharisma_Mod();
         Persuasion = getCharisma_Mod();
-        Religion = getWisdom_Mod();
+        Religion = getIntelligence_Mod();
         Sleight_of_Hand = getDexterity_Mod();
         Stealth = getDexterity_Mod();
         Survival = getWisdom_Mod();
+    }
+    //This function will call all initialization functions
+    public void fullIntialize(){
+        primaryStatLoader();
+        modifierLoader();
+        skillLoader();
+    }
 
-    }
-    //sets the stats to be the base stats
-    public void initialiazeNonBaseStats(){
-        setStrength(getBaseStrength());
-        setDexterity(getBaseDexterity());
-        setConstitution(getBaseConstitution());
-        setCharisma(getBaseCharisma());
-        setWisdom(getBaseWisdom());
-        setIntelligence(getBaseIntelligence());
-    }
-    //allows users to use the point buy system in character creation
-    public void purchaseSystem(){
-        //requires userinput to handle ex) please pick a number to choose your point buy system 1 15 14 13 10 9 8
-        //full choice list located here https://www.reddit.com/r/DnD/comments/2epkdi/5e_here_is_a_complete_list_of_valid_ability_score/
-    }
-    //recommends point allocations based on users race and/or class, maybe also subclass if selected early
-    public void recomendationSystem(){
-        //getClassclass to check player class, then get getRace to check race, use this to suggest best for class or
-        //to suggest best for balanced stats.
-    }
+
+    //GETTERS AND SETTERS
 
     public int getBaseStrength() {
-        return baseStrength;
+        return BaseStrength;
     }
 
     public void setBaseStrength(int baseStrength) {
-        this.baseStrength = baseStrength;
+        BaseStrength = baseStrength;
     }
 
     public int getBaseDexterity() {
-        return baseDexterity;
+        return BaseDexterity;
     }
 
     public void setBaseDexterity(int baseDexterity) {
-        this.baseDexterity = baseDexterity;
+        BaseDexterity = baseDexterity;
     }
 
     public int getBaseConstitution() {
-        return baseConstitution;
+        return BaseConstitution;
     }
 
     public void setBaseConstitution(int baseConstitution) {
-        this.baseConstitution = baseConstitution;
+        BaseConstitution = baseConstitution;
     }
 
     public int getBaseWisdom() {
-        return baseWisdom;
+        return BaseWisdom;
     }
 
     public void setBaseWisdom(int baseWisdom) {
-        this.baseWisdom = baseWisdom;
-    }
-
-    public int getBaseCharisma() {
-        return baseCharisma;
-    }
-
-    public void setBaseCharisma(int baseCharisma) {
-        this.baseCharisma = baseCharisma;
+        BaseWisdom = baseWisdom;
     }
 
     public int getBaseIntelligence() {
-        return baseIntelligence;
+        return BaseIntelligence;
     }
 
     public void setBaseIntelligence(int baseIntelligence) {
-        this.baseIntelligence = baseIntelligence;
+        BaseIntelligence = baseIntelligence;
+    }
+
+    public int getBaseCharisma() {
+        return BaseCharisma;
+    }
+
+    public void setBaseCharisma(int baseCharisma) {
+        BaseCharisma = baseCharisma;
     }
 
     public int getStrength() {
@@ -229,6 +233,150 @@ import java.util.*;
         Charisma_Mod = charisma_Mod;
     }
 
+    public int getAcrobatics() {
+        return Acrobatics;
+    }
+
+    public void setAcrobatics(int acrobatics) {
+        Acrobatics = acrobatics;
+    }
+
+    public int getAnimal_Handling() {
+        return Animal_Handling;
+    }
+
+    public void setAnimal_Handling(int animal_Handling) {
+        Animal_Handling = animal_Handling;
+    }
+
+    public int getArcana() {
+        return Arcana;
+    }
+
+    public void setArcana(int arcana) {
+        Arcana = arcana;
+    }
+
+    public int getAthletics() {
+        return Athletics;
+    }
+
+    public void setAthletics(int athletics) {
+        Athletics = athletics;
+    }
+
+    public int getDeception() {
+        return Deception;
+    }
+
+    public void setDeception(int deception) {
+        Deception = deception;
+    }
+
+    public int getHistory() {
+        return History;
+    }
+
+    public void setHistory(int history) {
+        History = history;
+    }
+
+    public int getInsight() {
+        return Insight;
+    }
+
+    public void setInsight(int insight) {
+        Insight = insight;
+    }
+
+    public int getIntimidation() {
+        return Intimidation;
+    }
+
+    public void setIntimidation(int intimidation) {
+        Intimidation = intimidation;
+    }
+
+    public int getInvestigation() {
+        return Investigation;
+    }
+
+    public void setInvestigation(int investigation) {
+        Investigation = investigation;
+    }
+
+    public int getMedicine() {
+        return Medicine;
+    }
+
+    public void setMedicine(int medicine) {
+        Medicine = medicine;
+    }
+
+    public int getNature() {
+        return Nature;
+    }
+
+    public void setNature(int nature) {
+        Nature = nature;
+    }
+
+    public int getPerception() {
+        return Perception;
+    }
+
+    public void setPerception(int perception) {
+        Perception = perception;
+    }
+
+    public int getPerformance() {
+        return Performance;
+    }
+
+    public void setPerformance(int performance) {
+        Performance = performance;
+    }
+
+    public int getPersuasion() {
+        return Persuasion;
+    }
+
+    public void setPersuasion(int persuasion) {
+        Persuasion = persuasion;
+    }
+
+    public int getReligion() {
+        return Religion;
+    }
+
+    public void setReligion(int religion) {
+        Religion = religion;
+    }
+
+    public int getSleight_of_Hand() {
+        return Sleight_of_Hand;
+    }
+
+    public void setSleight_of_Hand(int sleight_of_Hand) {
+        Sleight_of_Hand = sleight_of_Hand;
+    }
+
+    public int getStealth() {
+        return Stealth;
+    }
+
+    public void setStealth(int stealth) {
+        Stealth = stealth;
+    }
+
+    public int getSurvival() {
+        return Survival;
+    }
+
+    public void setSurvival(int survival) {
+        Survival = survival;
+    }
+
     public int getPlayer_Level() {
         return Player_Level;
     }
@@ -262,7 +410,6 @@ import java.util.*;
     }
 
     public int getSpeed() {
-        //get player size. Need to handle race
         return Speed;
     }
 
@@ -270,21 +417,25 @@ import java.util.*;
         Speed = speed;
     }
 
+    public int getExperience() {
+        return experience;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public int getProficiency() {
+        int level = getPlayer_Level();
+        int proficiency = 0;
+        while (level >= 1){
+            proficiency = proficiency + 1;
+            level = level - 4;
+        }
+        return proficiency;
+    }
+
     public void setProficiency(int proficiency) {
         this.proficiency = proficiency;
-    }
-    //finds player proffiency, this calculation loads players level and checks it against a math formula
-    public void getProficiency(){
-        int level = getPlayer_Level();
-        proficiency = 2;
-        while ((level - 4) > 0){
-            proficiency++;
-            level = level - 4;
-            if (level == 0){
-                break;
-            }
-        }
-
-
     }
 }
