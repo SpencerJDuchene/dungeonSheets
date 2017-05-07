@@ -36,11 +36,10 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+            <state relative-caret-position="470">
+              <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
               <folding>
                 <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
-                <element signature="method#refresh#0;class#Controller#0" expanded="false" />
                 <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
@@ -63,8 +62,8 @@
       <file leaf-file-name="StatGen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player/StatGen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4263">
-              <caret line="417" column="5" lean-forward="false" selection-start-line="417" selection-start-column="5" selection-end-line="417" selection-end-column="5" />
+            <state relative-caret-position="735">
+              <caret line="430" column="27" lean-forward="false" selection-start-line="430" selection-start-column="27" selection-end-line="430" selection-end-column="27" />
               <folding>
                 <element signature="method#threeDSix#0;class#StatGen#0" expanded="false" />
                 <element signature="method#randomStats#0;class#StatGen#0" expanded="false" />
@@ -72,8 +71,8 @@
                 <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
                 <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
                 <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-                <element signature="e#9499#9500#0" expanded="true" />
-                <element signature="e#9542#9543#0" expanded="true" />
+                <element signature="e#10097#10098#0" expanded="true" />
+                <element signature="e#10126#10127#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -649,7 +648,7 @@
       <workItem from="1494083897039" duration="7273000" />
       <workItem from="1494118838564" duration="6135000" />
       <workItem from="1494182552251" duration="4405000" />
-      <workItem from="1494195524742" duration="4234000" />
+      <workItem from="1494195524742" duration="4544000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit&#10;">
       <created>1485574064976</created>
@@ -683,7 +682,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27873000" />
+    <option name="totallyTimeSpent" value="28183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -746,7 +745,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -803,8 +802,8 @@
             <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#9542#9543#0" expanded="true" />
+            <element signature="e#10097#10098#0" expanded="true" />
+            <element signature="e#10126#10127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -815,7 +814,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
-            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
             <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
@@ -886,8 +884,8 @@
             <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#9542#9543#0" expanded="true" />
+            <element signature="e#10097#10098#0" expanded="true" />
+            <element signature="e#10126#10127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -898,7 +896,6 @@
           <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
-            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
             <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
@@ -962,8 +959,8 @@
             <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#9542#9543#0" expanded="true" />
+            <element signature="e#10097#10098#0" expanded="true" />
+            <element signature="e#10126#10127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -974,7 +971,6 @@
           <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
-            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
             <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
@@ -1038,8 +1034,8 @@
             <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#9542#9543#0" expanded="true" />
+            <element signature="e#10097#10098#0" expanded="true" />
+            <element signature="e#10126#10127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1050,7 +1046,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
-            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
             <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
@@ -1114,8 +1109,8 @@
             <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#9542#9543#0" expanded="true" />
+            <element signature="e#10097#10098#0" expanded="true" />
+            <element signature="e#10126#10127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1145,8 +1140,8 @@
             <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#9542#9543#0" expanded="true" />
+            <element signature="e#10097#10098#0" expanded="true" />
+            <element signature="e#10126#10127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1177,8 +1172,8 @@
             <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#9542#9543#0" expanded="true" />
+            <element signature="e#10097#10098#0" expanded="true" />
+            <element signature="e#10126#10127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1287,10 +1282,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="1773" column="0" lean-forward="false" selection-start-line="1773" selection-start-column="0" selection-end-line="1773" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Player/StatGen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4263">
-          <caret line="417" column="5" lean-forward="false" selection-start-line="417" selection-start-column="5" selection-end-line="417" selection-end-column="5" />
+        <state relative-caret-position="735">
+          <caret line="430" column="27" lean-forward="false" selection-start-line="430" selection-start-column="27" selection-end-line="430" selection-end-column="27" />
           <folding>
             <element signature="method#threeDSix#0;class#StatGen#0" expanded="false" />
             <element signature="method#randomStats#0;class#StatGen#0" expanded="false" />
@@ -1298,8 +1301,8 @@
             <element signature="method#modifierLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#skillLoader#0;class#StatGen#0" expanded="false" />
             <element signature="method#fullIntialize#0;class#StatGen#0" expanded="false" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#9542#9543#0" expanded="true" />
+            <element signature="e#10097#10098#0" expanded="true" />
+            <element signature="e#10126#10127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1315,21 +1318,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="1773" column="0" lean-forward="false" selection-start-line="1773" selection-start-column="0" selection-end-line="1773" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        <state relative-caret-position="470">
+          <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
           <folding>
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
-            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
             <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>

@@ -45,7 +45,7 @@ public class Controller {
     @FXML
     private javafx.scene.control.CheckBox updateCheck;
 
-    
+
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resourceBundle;
     @FXML // URL location of the FXML file that was given to the FXMLLoader
@@ -116,28 +116,10 @@ public class Controller {
         Integer IntMod = new Integer(statCreate.getIntelligence_Mod());
         intModArea.setText(IntMod.toString());
 
-        //do this for all skills later
-        acroLabel.setText(DexMod.toString());
-        AnmlLabel.setText(ChaMod.toString());
-        ArcanaLabel.setText(IntMod.toString());
-        athlLabel.setText(StrMod.toString());
-        DecepLabel.setText(ChaMod.toString());
-        HistLabel.setText(IntMod.toString());
-        InsightLabel.setText(WisMod.toString());
-        IntimidLabel.setText(ChaMod.toString());
-        InvestLabel.setText(IntMod.toString());
-        MediLabel.setText(IntMod.toString());
-        NatureLabel.setText(WisMod.toString());
-        PercepLabel.setText(WisMod.toString());
-        PerformLabel.setText(ChaMod.toString());
-        PersuadeLabel.setText(ChaMod.toString());
-        ReliLabel.setText(WisMod.toString());
-        SleightLabel.setText(DexMod.toString());
-        StealthLabel.setText(DexMod.toString());
-        SurviveLabel.setText(WisMod.toString());
+        updateCheck();
     }
     @FXML
-    void updateCheck(ActionEvent reNameMe){
+    void updateCheck(){
         Integer alter = 0;
         if(acroProf.isSelected()){
             alter = statCreate.getDexterity_Mod() + statCreate.getProficiency();

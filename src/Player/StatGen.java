@@ -428,7 +428,7 @@ import java.util.*;
     public int getProficiency() {
         int level = getPlayer_Level();
 
-        int proficiency = 0;
+        int proficiency = 1;
         while (level >= 1){
             proficiency = proficiency + 1;
             level = level - 4;
