@@ -35,6 +35,8 @@ public class Controller {
     @FXML
     private Label SleightLabel,StealthLabel,SurviveLabel;
     @FXML
+    public Label levelLabel, profLabel;
+    @FXML
     private CheckBox acroProf, anmlProf, arcanaProf,athletProf,decepProf,natureProf,percepProf, performProf, persuaProf;
     @FXML
     private CheckBox histProf,insightProf,investProf,mediProf,reliProf,sohProf,stealthProf,surviveProf, initimiProf;
@@ -116,6 +118,10 @@ public class Controller {
         Integer IntMod = new Integer(statCreate.getIntelligence_Mod());
         intModArea.setText(IntMod.toString());
 
+        Integer level = statCreate.getPlayer_Level();
+        Integer proficiency = statCreate.getProficiency();
+        levelLabel.setText(level.toString());
+        profLabel.setText(proficiency.toString());
         updateCheck();
     }
     @FXML
