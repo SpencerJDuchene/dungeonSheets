@@ -23,7 +23,7 @@ public class main extends Application{
             primaryStage.setScene(scene);
             this.getClass().getClassLoader().getResourceAsStream("main/res/dungeonsheetsico.png");
             primaryStage.getIcons().add(new Image(main.class.getResourceAsStream("res/dungeonsheetsico.png")));
-            primaryStage.setTitle("Dungeon Sheets ALPHA 0.3.2");
+            primaryStage.setTitle("Dungeon Sheets ALPHA 0.3.3");
             primaryStage.show();
         } catch (Exception ex) {
             Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);

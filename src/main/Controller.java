@@ -25,9 +25,9 @@ public class Controller {
     @FXML
     private TextField StrDisplay, DexDisplay,ConDisplay,ChaDisplay,WisDisplay,IntDisplay;
     @FXML
-    private TextField StrDisplay1, DexDisplay1,ConDisplay1,ChaDisplay1,WisDisplay1,IntDisplay1;
-    @FXML
     private Label strModArea,dexModArea,conModArea,chaModArea,wisModArea,intModArea;
+    @FXML
+    private Label strSave,dexSave,conSave,chaSave,wisSave,intSave;
     @FXML
     private Label acroLabel, AnmlLabel,ArcanaLabel,athlLabel,DecepLabel,HistLabel,InsightLabel,IntimidLabel;
     @FXML
@@ -41,11 +41,8 @@ public class Controller {
     @FXML
     private CheckBox histProf,insightProf,investProf,mediProf,reliProf,sohProf,stealthProf,surviveProf, initimiProf;
     @FXML
-    private TextField strEdit,dexEdit,conEdit,chaEdit,wisEdit,intEdit;
-    @FXML
-    private javafx.scene.control.Button updateButton;
-    @FXML
-    private javafx.scene.control.CheckBox updateCheck;
+    private CheckBox strProf,dexProf,conProf,chaProf,wisProf,intProf;
+
 
 
     @FXML // ResourceBundle that was given to the FXMLLoader
@@ -118,6 +115,13 @@ public class Controller {
         Integer IntMod = new Integer(statCreate.getIntelligence_Mod());
         intModArea.setText(IntMod.toString());
 
+        strSave.setText(((Integer) statCreate.getStrength_Mod()).toString());
+        dexSave.setText(((Integer) statCreate.getDexterity_Mod()).toString());
+        conSave.setText(((Integer) statCreate.getConstitution_Mod()).toString());
+        chaSave.setText(((Integer) statCreate.getCharisma_Mod()).toString());
+        wisSave.setText(((Integer) statCreate.getWisdom_Mod()).toString());
+        intSave.setText(((Integer) statCreate.getIntelligence_Mod()).toString());
+
         Integer level = statCreate.getPlayer_Level();
         Integer proficiency = statCreate.getProficiency();
         levelLabel.setText(level.toString());
@@ -127,6 +131,13 @@ public class Controller {
     @FXML
     void updateCheck(){
         Integer alter = 0;
+        if(strProf.isSelected()){
+            alter = statCreate.getStrength_Mod() + statCreate.getProficiency();
+            strSave.setText(alter.toString());
+        }
+        if(dexProf.isSelected()){
+            alter = statCreate.getDexterity_Mod() + statCreate.getProficiency();
+        }
         if(acroProf.isSelected()){
             alter = statCreate.getDexterity_Mod() + statCreate.getProficiency();
             acroLabel.setText(alter.toString());
