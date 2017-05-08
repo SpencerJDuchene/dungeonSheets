@@ -13,12 +13,14 @@ import java.util.*;
     //Initialize these with the base stats, then update with other data.
     protected int Strength,Dexterity,Constitution,Wisdom,Intelligence,Charisma;
     protected int Strength_Mod, Dexterity_Mod,Constitution_Mod,Wisdom_Mod,Intelligence_Mod,Charisma_Mod;
+    protected int Str_save,Dex_save,Con_save,Cha_save,Wis_save,Int_save;
     protected int Acrobatics, Animal_Handling, Arcana, Athletics, Deception, History;
     protected int Insight, Intimidation,Investigation,Medicine,Nature,Perception,Performance;
     protected int Persuasion,Religion,Sleight_of_Hand,Stealth,Survival;
     //This data will need to change on a character load.
     protected int Player_Level = 1;
     protected int Hit_Dice, Initiative, Armor_Class, Speed, experience, proficiency;
+    protected String size,race,playerClass;
 
     //This function initializes the primary stats
     void primaryStatLoader(){
@@ -416,9 +418,5 @@ import java.util.*;
             level = level - 4;
         }
         return proficiency;
-    }
-
-    public void setProficiency(int proficiency) {
-        this.proficiency = proficiency;
     }
 }
