@@ -53,7 +53,7 @@ public class Controller {
     //takes the event from the update button and updates stats when pressed
     @FXML
     //figure out how to update stats when focus is lost, need to fix the loader to update independently of other stats
-    void buttonPressed(ActionEvent update) {
+    void buttonPressed() {
         while (count < 1) {
 
                 try {

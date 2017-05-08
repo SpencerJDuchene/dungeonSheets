@@ -20,24 +20,6 @@ import java.util.*;
     protected int Player_Level = 1;
     protected int Hit_Dice, Initiative, Armor_Class, Speed, experience, proficiency;
 
-
-    //This function will create 1 random stat, (a 3d6 roll)
-    int threeDSix(){
-        Random roll = new Random();
-        int first = roll.nextInt(6);
-        int second = roll.nextInt(6);
-        int third = roll.nextInt(6);
-        return (first + second + third);
-    }
-    // this function will load all stats to a random number 3-18
-    void randomStats(){
-        setBaseStrength(threeDSix());
-        setBaseDexterity(threeDSix());
-        setBaseConstitution(threeDSix());
-        setBaseCharisma(threeDSix());
-        setBaseIntelligence(threeDSix());
-        setBaseWisdom(threeDSix());
-    }
     //This function initializes the primary stats
     void primaryStatLoader(){
         Strength = getBaseStrength();
