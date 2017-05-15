@@ -44,11 +44,6 @@ public class Controller {
     private CheckBox strProf,dexProf,conProf,chaProf,wisProf,intProf;
 
 
-
-    @FXML // ResourceBundle that was given to the FXMLLoader
-    private ResourceBundle resourceBundle;
-    @FXML // URL location of the FXML file that was given to the FXMLLoader
-    private URL location;
     //takes the event from the update button and updates stats when pressed
     @FXML
     //figure out how to update stats when focus is lost, need to fix the loader to update independently of other stats
@@ -92,12 +87,12 @@ public class Controller {
         intelligence = statCreate.getIntelligence();
         Integer intelligence1 = new Integer(intelligence);
         //sets the base stats
-        StrDisplay.setText(strength1.toString());
-        DexDisplay.setText(dexterity1.toString());
-        ConDisplay.setText(constitution1.toString());
-        ChaDisplay.setText(charisma1.toString());
-        WisDisplay.setText(wisdom1.toString());
-        IntDisplay.setText(intelligence1.toString());
+        //StrDisplay.setText(strength1.toString());
+       // DexDisplay.setText(dexterity1.toString());
+      //  ConDisplay.setText(constitution1.toString());
+      ///  ChaDisplay.setText(charisma1.toString());
+      //  WisDisplay.setText(wisdom1.toString());
+      //  IntDisplay.setText(intelligence1.toString());
 
 
 
@@ -115,12 +110,7 @@ public class Controller {
         Integer IntMod = new Integer(statCreate.getIntelligence_Mod());
         intModArea.setText(IntMod.toString());
 
-        strSave.setText(((Integer) statCreate.getStrength_Mod()).toString());
-        dexSave.setText(((Integer) statCreate.getDexterity_Mod()).toString());
-        conSave.setText(((Integer) statCreate.getConstitution_Mod()).toString());
-        chaSave.setText(((Integer) statCreate.getCharisma_Mod()).toString());
-        wisSave.setText(((Integer) statCreate.getWisdom_Mod()).toString());
-        intSave.setText(((Integer) statCreate.getIntelligence_Mod()).toString());
+
 
         Integer level = statCreate.getPlayer_Level();
         Integer proficiency = statCreate.getProficiency();
@@ -137,6 +127,23 @@ public class Controller {
         }
         if(dexProf.isSelected()){
             alter = statCreate.getDexterity_Mod() + statCreate.getProficiency();
+            dexSave.setText(alter.toString());
+        }
+        if(conProf.isSelected()){
+            alter = statCreate.getConstitution_Mod() + statCreate.getProficiency();
+            conSave.setText(alter.toString());
+        }
+        if(chaProf.isSelected()){
+            alter = statCreate.getCharisma_Mod() + statCreate.getProficiency();
+            chaSave.setText(alter.toString());
+        }
+        if(wisProf.isSelected()){
+            alter = statCreate.getWisdom_Mod() + statCreate.getProficiency();
+            wisSave.setText(alter.toString());
+        }
+        if(intProf.isSelected()){
+            alter = statCreate.getIntelligence_Mod() + statCreate.getProficiency();
+            intSave.setText(alter.toString());
         }
         if(acroProf.isSelected()){
             alter = statCreate.getDexterity_Mod() + statCreate.getProficiency();
@@ -282,6 +289,30 @@ public class Controller {
         if(surviveProf.isSelected() == false){
             alter = statCreate.getWisdom_Mod();
             SurviveLabel.setText(alter.toString());
+        }
+        if(strProf.isSelected() == false){
+            alter = statCreate.getStrength_Mod();
+            strSave.setText(alter.toString());
+        }
+        if(dexProf.isSelected()== false){
+            alter = statCreate.getDexterity_Mod();
+            dexSave.setText(alter.toString());
+        }
+        if(conProf.isSelected()== false){
+            alter = statCreate.getConstitution_Mod();
+            conSave.setText(alter.toString());
+        }
+        if(chaProf.isSelected()== false){
+            alter = statCreate.getCharisma_Mod();
+            chaSave.setText(alter.toString());
+        }
+        if(wisProf.isSelected()== false){
+            alter = statCreate.getWisdom_Mod();
+            wisSave.setText(alter.toString());
+        }
+        if(intProf.isSelected()== false){
+            alter = statCreate.getIntelligence_Mod();
+            intSave.setText(alter.toString());
         }
         //undo prof. bonus when unchecked
 

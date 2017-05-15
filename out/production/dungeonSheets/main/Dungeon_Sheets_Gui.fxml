@@ -10,6 +10,7 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -67,7 +68,7 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="640.0">
                            <children>
-                              <GridPane layoutX="10.0" layoutY="60.0" prefHeight="615.0" prefWidth="139.0">
+                              <GridPane layoutX="14.0" layoutY="84.0" prefHeight="435.0" prefWidth="139.0">
                                 <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                 </columnConstraints>
@@ -116,17 +117,34 @@
                                     <Button fx:id="updateButton" mnemonicParsing="false" onAction="#buttonPressed" text="UPDATE" GridPane.halignment="CENTER" GridPane.rowIndex="19" GridPane.valignment="CENTER" />
                                  </children>
                               </GridPane>
-                              <GridPane layoutX="181.0" layoutY="368.0" prefHeight="322.0" prefWidth="381.0">
+                              <GridPane layoutX="160.0" layoutY="86.0" prefHeight="614.0" prefWidth="155.0">
                                 <columnConstraints>
-                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="166.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="31.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="139.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="30.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="141.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="30.0" />
                                 </columnConstraints>
                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -135,43 +153,43 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <CheckBox fx:id="acroProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="anmlProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="arcanaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="athletProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="decepProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="histProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="insightProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="initimiProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="investProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="mediProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="natureProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="percepProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="performProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="persuaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="reliProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="sohProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="stealthProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="surviveProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Acrobatics" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Animal Handling" GridPane.rowIndex="1" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Arcana" GridPane.rowIndex="2" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Athletics" GridPane.rowIndex="3" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Deception" GridPane.rowIndex="4" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" History" GridPane.columnIndex="2" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Insight" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Intimidation" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Investigation" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Medicine" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Nature" GridPane.rowIndex="5" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Perception" GridPane.rowIndex="6" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Performance" GridPane.rowIndex="7" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Persuasion" GridPane.rowIndex="8" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Religion" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Sleight of hand" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Stealth" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Survival" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                    <Label fx:id="acroLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <CheckBox fx:id="acroProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="anmlProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="arcanaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="athletProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="decepProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="14" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="histProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="15" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="insightProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="16" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="initimiProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="17" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="investProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="18" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="mediProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="19" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="natureProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="20" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="percepProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="21" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="performProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="22" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="persuaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="23" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="reliProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="24" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="sohProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="25" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="stealthProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="26" GridPane.valignment="CENTER" />
+                                    <CheckBox fx:id="surviveProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="27" GridPane.valignment="CENTER" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Acrobatics" GridPane.rowIndex="10" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Animal Handling" GridPane.rowIndex="11" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Arcana" GridPane.rowIndex="12" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Athletics" GridPane.rowIndex="13" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Deception" GridPane.rowIndex="14" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" History" GridPane.rowIndex="15" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Insight" GridPane.rowIndex="16" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Intimidation" GridPane.rowIndex="17" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Investigation" GridPane.rowIndex="18" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Medicine" GridPane.rowIndex="19" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Nature" GridPane.rowIndex="20" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Perception" GridPane.rowIndex="21" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Performance" GridPane.rowIndex="22" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Persuasion" GridPane.rowIndex="23" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Religion" GridPane.rowIndex="24" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Sleight of hand" GridPane.rowIndex="25" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Stealth" GridPane.rowIndex="26" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Survival" GridPane.rowIndex="27" />
+                                    <Label fx:id="acroLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="10" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
@@ -179,121 +197,134 @@
                                           <Insets />
                                        </GridPane.margin>
                                     </Label>
-                                    <Label fx:id="AnmlLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <Label fx:id="AnmlLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="11" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="ArcanaLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <Label fx:id="ArcanaLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="12" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="athlLabel" text="Str" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                    <Label fx:id="athlLabel" text="Str" GridPane.halignment="RIGHT" GridPane.rowIndex="13" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="DecepLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                    <Label fx:id="DecepLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="14" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="HistLabel" text="Int" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <Label fx:id="HistLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="15" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="InsightLabel" text="Wis" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <Label fx:id="InsightLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="16" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="IntimidLabel" text="Cha" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                    <Label fx:id="IntimidLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="17" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="InvestLabel" text="Int" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                    <Label fx:id="InvestLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="18" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="MediLabel" text="Int" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                    <Label fx:id="MediLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="19" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="NatureLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                    <Label fx:id="NatureLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="20" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="PercepLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                    <Label fx:id="PercepLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="21" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="PerformLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                    <Label fx:id="PerformLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="22" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="PersuadeLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                                    <Label fx:id="PersuadeLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="23" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="ReliLabel" text="Wis" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                    <Label fx:id="ReliLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="24" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="SleightLabel" text="Dex" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                    <Label fx:id="SleightLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="25" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="StealthLabel" text="Dex" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                    <Label fx:id="StealthLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="26" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
-                                    <Label fx:id="SurviveLabel" text="Wis" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                                    <Label fx:id="SurviveLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="27" GridPane.valignment="CENTER">
                                        <padding>
                                           <Insets right="5.0" />
                                        </padding>
                                     </Label>
+                                    <Label prefHeight="5.0" prefWidth="42.0" text="Int Save" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
+                                    <Label fx:id="intSave" text="int save" GridPane.halignment="RIGHT" GridPane.rowIndex="8" />
+                                    <CheckBox fx:id="intProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+                                    <Label text="Wis Save" GridPane.halignment="LEFT" GridPane.rowIndex="7" />
+                                    <Label fx:id="wisSave" text="wis save" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+                                    <CheckBox fx:id="wisProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                                    <Label text="Cha Save" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
+                                    <Label text="Con Save" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
+                                    <Label fx:id="chaSave" text="cha save" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+                                    <Label fx:id="conSave" text="con save" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="chaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                                    <CheckBox fx:id="conProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                    <Label text="Dex Save" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+                                    <Label fx:id="dexSave" text="dex save" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+                                    <CheckBox fx:id="dexProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                    <Label text="Str Save" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+                                    <Label fx:id="strSave" text="str save" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="strProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                    <CheckBox mnemonicParsing="false" prefHeight="17.0" prefWidth="78.0" text="Inspiration" GridPane.halignment="CENTER" />
+                                    <Label text="Prof. Bonus" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+                                    <Label fx:id="profLabel" text="Prof." GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
                                  </children>
                               </GridPane>
-                              <GridPane layoutX="295.0" layoutY="14.0" prefHeight="90.0" prefWidth="696.0">
+                              <GridPane layoutX="330.0" layoutY="14.0" prefHeight="49.0" prefWidth="457.0">
                                 <columnConstraints>
-                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="136.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="136.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="113.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="159.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="46.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="153.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="0.0" prefWidth="141.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="109.0" />
                                 </columnConstraints>
                                 <rowConstraints>
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
                                     <Label text="Class" GridPane.halignment="CENTER" />
                                     <Label text="Class Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                                     <Label text="Faction" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
                                     <Label text="Faction" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
-                                    <Label text="Current Exp" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                    <Label text="Needed Exp" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                    <Label text="Exp Current" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                    <Label text="Exp to Level" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                    <Label text="Current Exp" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                    <Label text="Exp Current" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                                     <Label text="Level" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                                     <Label fx:id="levelLabel" text="Current Level" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label fx:id="profLabel" text="Prof. Bonus" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Prof. Bonus" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Button mnemonicParsing="false" text="Confirm Exp. Change" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                    <CheckBox mnemonicParsing="false" text="Inspiration" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                                  </children>
                               </GridPane>
                               <GridPane layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="248.0">
@@ -309,7 +340,7 @@
                                     <TextField prefHeight="31.0" prefWidth="183.0" GridPane.columnIndex="1" />
                                  </children>
                               </GridPane>
-                              <GridPane layoutX="396.0" layoutY="104.0" prefHeight="140.0" prefWidth="615.0">
+                              <GridPane layoutX="315.0" layoutY="232.0" prefHeight="140.0" prefWidth="615.0">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -326,7 +357,7 @@
                                     <Label text="Max Hit Points" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                                     <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                     <Label text="Temp HP" GridPane.rowIndex="2" />
-                                    <Label text="Gain or lost &quot;-&quot; for lost" GridPane.columnIndex="1" />
+                                    <Label text="Add/Subtract (- for subtract)" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                                     <Label text="Hit Points" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                                     <Label text="Current" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
                                     <Label text="Max" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
@@ -334,7 +365,7 @@
                                     <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                  </children>
                               </GridPane>
-                              <GridPane gridLinesVisible="true" layoutX="562.0" layoutY="368.0" prefHeight="315.0" prefWidth="453.0">
+                              <GridPane gridLinesVisible="true" layoutX="315.0" layoutY="385.0" prefHeight="315.0" prefWidth="453.0">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="391.0" minWidth="10.0" prefWidth="378.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="75.0" />
@@ -357,7 +388,7 @@
                                     <Label text="Gear 5" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
                                  </children>
                               </GridPane>
-                              <GridPane layoutX="432.0" layoutY="264.0" prefWidth="544.0">
+                              <GridPane layoutX="393.0" layoutY="104.0" prefHeight="60.0" prefWidth="238.0">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -376,49 +407,33 @@
                                     <Label text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                                  </children>
                               </GridPane>
-                              <GridPane layoutX="162.0" layoutY="104.0" prefHeight="247.0" prefWidth="226.0">
-                                <columnConstraints>
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="94.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="37.0" />
-                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="103.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                </rowConstraints>
-                                 <children>
-                                    <Label text="Str Save" GridPane.halignment="CENTER" />
-                                    <Label text="Dex Save" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Con Save" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                    <Label text="Cha Save" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                    <Label text="Wis Save" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-                                    <Label text="Int Save" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-                                    <Label fx:id="strSave" text="str save" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
-                                    <Label fx:id="dexSave" text="dex save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label fx:id="conSave" text="con save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                    <Label fx:id="chaSave" text="cha save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                    <Label fx:id="wisSave" text="wis save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-                                    <Label fx:id="intSave" text="int save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-                                    <CheckBox mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-                                 </children>
-                              </GridPane>
                            </children>
                         </AnchorPane>
                   </content>
                 </Tab>
-                <Tab text="Spells" />
                   <Tab text="Experience Log">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="14.0" layoutY="14.0" prefHeight="90.0" prefWidth="323.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Current Experience" />
+                                    <Label text="Label" GridPane.columnIndex="1" />
+                                    <Label prefHeight="17.0" prefWidth="136.0" text="Needed Experience" GridPane.rowIndex="1" />
+                                    <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <TextArea layoutX="14.0" layoutY="104.0" prefHeight="567.0" prefWidth="475.0" />
+                           </children></AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Inventory">
