@@ -45,8 +45,8 @@ public class Controller {
 
 
     //takes the event from the update button and updates stats when pressed
-    @FXML
     //figure out how to update stats when focus is lost, need to fix the loader to update independently of other stats
+    @FXML
     void buttonPressed() {
         while (count < 1) {
 
@@ -71,39 +71,13 @@ public class Controller {
         }
     @FXML
     void refresh(){
-        int strength, dexterity,constitution,charisma,wisdom,intelligence;
-
-        //loads the base stats
-        strength = statCreate.getStrength();
-        Integer strength1 = new Integer(strength);
-        dexterity = statCreate.getDexterity();
-        Integer dexterity1 = new Integer(dexterity);
-        constitution = statCreate.getConstitution();
-        Integer constitution1 = new Integer(constitution);
-        charisma = statCreate.getCharisma();
-        Integer charisma1 = new Integer(charisma);
-        wisdom = statCreate.getWisdom();
-        Integer wisdom1 = new Integer(wisdom);
-        intelligence = statCreate.getIntelligence();
-        Integer intelligence1 = new Integer(intelligence);
-        //sets the base stats
-        //StrDisplay.setText(strength1.toString());
-       // DexDisplay.setText(dexterity1.toString());
-      //  ConDisplay.setText(constitution1.toString());
-      ///  ChaDisplay.setText(charisma1.toString());
-      //  WisDisplay.setText(wisdom1.toString());
-      //  IntDisplay.setText(intelligence1.toString());
-
-
-
-        //set the modifier text areas
+     //set the modifier text areas
         strModArea.setText(((Integer) statCreate.getStrength_Mod()).toString());
         dexModArea.setText(((Integer) statCreate.getDexterity_Mod()).toString());
         conModArea.setText(((Integer) statCreate.getConstitution_Mod()).toString());
         chaModArea.setText(((Integer) statCreate.getCharisma_Mod()).toString());
         wisModArea.setText(((Integer) statCreate.getWisdom_Mod()).toString());
         intModArea.setText(((Integer) statCreate.getIntelligence_Mod()).toString());
-        
 
         Integer level = statCreate.getPlayer_Level();
         Integer proficiency = statCreate.getProficiency();
@@ -111,6 +85,7 @@ public class Controller {
         profLabel.setText(proficiency.toString());
         updateCheck();
     }
+    //I would honestly love a way to shorten this, it feels excessive.
     @FXML
     void updateCheck(){
         Integer alter = 0;

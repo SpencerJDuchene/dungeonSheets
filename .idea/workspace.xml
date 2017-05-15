@@ -47,10 +47,13 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="105" column="8" lean-forward="false" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
+            <state relative-caret-position="448">
+              <caret line="286" column="9" lean-forward="true" selection-start-line="286" selection-start-column="9" selection-end-line="286" selection-end-column="9" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
+                <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+                <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -690,7 +693,7 @@
       <workItem from="1494182552251" duration="4405000" />
       <workItem from="1494195524742" duration="14390000" />
       <workItem from="1494305568286" duration="113000" />
-      <workItem from="1494816943788" duration="4230000" />
+      <workItem from="1494816943788" duration="4745000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit&#10;">
       <created>1485574064976</created>
@@ -724,7 +727,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42372000" />
+    <option name="totallyTimeSpent" value="42887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -796,7 +799,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="39" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -861,7 +864,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
+            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -944,7 +950,10 @@
         <state relative-caret-position="650">
           <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
+            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1020,7 +1029,10 @@
         <state relative-caret-position="850">
           <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
+            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1096,7 +1108,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
+            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1371,10 +1386,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="105" column="8" lean-forward="false" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
+        <state relative-caret-position="448">
+          <caret line="286" column="9" lean-forward="true" selection-start-line="286" selection-start-column="9" selection-end-line="286" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#buttonPressed#0;class#Controller#0" expanded="false" />
+            <element signature="method#refresh#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateCheck#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
