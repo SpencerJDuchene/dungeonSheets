@@ -97,20 +97,13 @@ public class Controller {
 
 
         //set the modifier text areas
-        Integer StrMod = new Integer(statCreate.getStrength_Mod());
-        strModArea.setText(StrMod.toString());
-        Integer DexMod = new Integer(statCreate.getDexterity_Mod());
-        dexModArea.setText(DexMod.toString());
-        Integer ConMod = new Integer(statCreate.getConstitution_Mod());
-        conModArea.setText(ConMod.toString());
-        Integer ChaMod = new Integer(statCreate.getCharisma_Mod());
-        chaModArea.setText(ChaMod.toString());
-        Integer WisMod = new Integer(statCreate.getWisdom_Mod());
-        wisModArea.setText(WisMod.toString());
-        Integer IntMod = new Integer(statCreate.getIntelligence_Mod());
-        intModArea.setText(IntMod.toString());
-
-
+        strModArea.setText(((Integer) statCreate.getStrength_Mod()).toString());
+        dexModArea.setText(((Integer) statCreate.getDexterity_Mod()).toString());
+        conModArea.setText(((Integer) statCreate.getConstitution_Mod()).toString());
+        chaModArea.setText(((Integer) statCreate.getCharisma_Mod()).toString());
+        wisModArea.setText(((Integer) statCreate.getWisdom_Mod()).toString());
+        intModArea.setText(((Integer) statCreate.getIntelligence_Mod()).toString());
+        
 
         Integer level = statCreate.getPlayer_Level();
         Integer proficiency = statCreate.getProficiency();
