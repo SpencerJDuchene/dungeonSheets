@@ -110,6 +110,7 @@
                                     <Label fx:id="wisModArea" text="Wis Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
                                     <Label fx:id="intModArea" text="Int Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
                                     <Button fx:id="updateButton" mnemonicParsing="false" onAction="#buttonPressed" text="UPDATE" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
+                                    <Label text="Modifier" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                                  </children>
                               </GridPane>
                               <GridPane layoutX="238.0" layoutY="104.0" prefHeight="601.0" prefWidth="162.0">
