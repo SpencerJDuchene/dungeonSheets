@@ -15,6 +15,7 @@ import javafx.stage.Stage;
  */
 public class main extends Application{
 
+    //TODO handle sizing, get monitor size and fit to it. And set up preference options for users.
     @Override
     public void start(Stage primaryStage) {
         try {

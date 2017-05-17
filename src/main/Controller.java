@@ -4,6 +4,7 @@ package main;
  */
 
 
+import IO.Saving;
 import com.sun.org.apache.regexp.internal.RE;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -42,6 +43,8 @@ public class Controller {
     private CheckBox histProf,insightProf,investProf,mediProf,reliProf,sohProf,stealthProf,surviveProf, initimiProf;
     @FXML
     private CheckBox strProf,dexProf,conProf,chaProf,wisProf,intProf;
+    @FXML
+    private MenuItem saveToFile;
 
 
     //takes the event from the update button and updates stats when pressed
@@ -285,4 +288,9 @@ public class Controller {
         //undo prof. bonus when unchecked
 
         }
+    @FXML
+    void save() {
+        Saving savePlayer = new Saving();
+        savePlayer.writeToFile(statCreate);
+    }
     }

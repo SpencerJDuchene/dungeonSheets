@@ -27,10 +27,7 @@
           <items>
             <MenuItem mnemonicParsing="false" text="New" />
             <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem fx:id="saveToFile" mnemonicParsing="false" onAction="#save" text="Save" />
             <MenuItem mnemonicParsing="false" text="Save As…" />
             <MenuItem mnemonicParsing="false" text="Revert" />
             <SeparatorMenuItem mnemonicParsing="false" />
@@ -421,22 +418,52 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Label text="Copper" underline="true" GridPane.rowIndex="1" />
-                                    <Label text="Silver" underline="true" GridPane.rowIndex="3" />
-                                    <Label text="Electrum" underline="true" GridPane.rowIndex="5" />
-                                    <Label text="Gold" underline="true" GridPane.rowIndex="7" />
-                                    <Label text="Platinum" underline="true" GridPane.rowIndex="9" />
+                                    <Label text="Copper" underline="true" GridPane.rowIndex="1">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                    <Label text="Silver" underline="true" GridPane.rowIndex="3">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                    <Label text="Electrum" underline="true" GridPane.rowIndex="5">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                    <Label text="Gold" underline="true" GridPane.rowIndex="7">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                    <Label text="Platinum" underline="true" GridPane.rowIndex="9">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
                                     <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                     <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                     <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
                                     <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
                                     <TextField GridPane.columnIndex="1" GridPane.rowIndex="9" />
                                     <Label text="- for remove" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                                    <Label text="cp" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
-                                    <Label text="sp" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
-                                    <Label text="ep" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
-                                    <Label text="gp" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
-                                    <Label text="pp" GridPane.halignment="LEFT" GridPane.rowIndex="10" />
+                                    <Label text="cp" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                    <Label text="sp" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                    <Label text="ep" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                    <Label text="gp" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                    <Label text="pp" GridPane.halignment="LEFT" GridPane.rowIndex="10">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
                                  </children>
                               </GridPane>
                            </children>
