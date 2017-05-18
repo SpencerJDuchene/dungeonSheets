@@ -9,15 +9,24 @@ import com.sun.org.apache.regexp.internal.RE;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.scene.control.*;
+
+import java.awt.*;
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import Player.*;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+import javax.swing.*;
 
 
-public class Controller {
+public class Controller extends main {
     //cant remember if making this global is bad or not
     @FXML
     StatGen statCreate = new StatGen();
@@ -289,8 +298,7 @@ public class Controller {
 
         }
     @FXML
-    void save() {
-        Saving savePlayer = new Saving();
-        savePlayer.writeToFile(statCreate);
+    void save(ActionEvent saveCalled) {
+        haveMeCallMain();
     }
     }

@@ -1,24 +1,26 @@
 package IO;
 
-import java.io.*;
-import main.Controller;
-import main.*;
-/**
- * Created by Spencer on 3/1/2017.
- */
-public class Saving{
+import Player.StatGen;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
-    public void writeToFile(Object playerInstance){
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+
+public class Saving{
+    public Desktop desktop = Desktop.getDesktop();
+
+    public void storeStage(Stage primaryStage) {
+
+    }
+
+    public void openFile(File file){
         try{
-            FileOutputStream savePlayer = new FileOutputStream();
-            ObjectOutputStream writePlayer = new ObjectOutputStream(savePlayer);
-            writePlayer.writeObject(playerInstance);
-            writePlayer.close();
-            savePlayer.close();
-            System.out.println("Saved");
-        }
-        catch (IOException e){
+            desktop.open(file);
+        }catch (IOException e){
             e.printStackTrace();
         }
     }
 }
+

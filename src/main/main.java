@@ -1,6 +1,8 @@
 package main;
+import IO.Saving;
 import Player.*;
 
+import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
@@ -9,6 +11,8 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import javax.swing.*;
 
 /**
  * Created by Spencer on 1/24/2017.
@@ -30,10 +34,11 @@ public class main extends Application{
             Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
+    public void haveMeCallMain(){
+        Saving test = new Saving();
+        test.storeStage(start());
+    }
     public static void main(String[] args){
-        statRolls playerRolls = new statRolls();
-        background interact = new background(); //background extends StatGen so we get the same access
         launch(args);
     }
 
