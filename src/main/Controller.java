@@ -19,11 +19,15 @@ import Player.*;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import sun.applet.Main;
+import sun.plugin.javascript.navig.Anchor;
 
 import javax.swing.*;
+import javax.swing.plaf.FileChooserUI;
 
 
 public class Controller extends main {
@@ -54,6 +58,10 @@ public class Controller extends main {
     private CheckBox strProf,dexProf,conProf,chaProf,wisProf,intProf;
     @FXML
     private MenuItem saveToFile;
+    @FXML
+    private JFileChooser saveSelector;
+    @FXML
+    private AnchorPane Anchor;
 
 
     //takes the event from the update button and updates stats when pressed
@@ -299,6 +307,9 @@ public class Controller extends main {
         }
     @FXML
     void save(ActionEvent saveCalled) {
-        haveMeCallMain();
+        //Calling Main to launch the file choice window, this feels wrong though.
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("test");
+        fileChooser.showOpenDialog(Anchor.getScene().getWindow());
     }
     }
