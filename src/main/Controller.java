@@ -63,7 +63,6 @@ public class Controller extends main {
     @FXML
     private AnchorPane Anchor;
 
-
     //takes the event from the update button and updates stats when pressed
     //figure out how to update stats when focus is lost, need to fix the loader to update independently of other stats
     @FXML
@@ -306,10 +305,12 @@ public class Controller extends main {
 
         }
     @FXML
-    void save(ActionEvent saveCalled) {
-        //Calling Main to launch the file choice window, this feels wrong though.
+    //update this to handle loading as well after making functional
+    void save() {
+        //Having an fx:id for the Anchor Pane appears to be critical to make the File C1hooser work.
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("test");
+        fileChooser.setTitle("Please select your character sheet");
         fileChooser.showOpenDialog(Anchor.getScene().getWindow());
+
     }
     }
