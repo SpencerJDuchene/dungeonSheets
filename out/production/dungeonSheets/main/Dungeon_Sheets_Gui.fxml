@@ -19,15 +19,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="770.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+<VBox alignment="CENTER" minHeight="750.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="File">
           <items>
+            <MenuItem fx:id="saveToFile" mnemonicParsing="false" onAction="#save" text="Save" />
             <MenuItem mnemonicParsing="false" text="New" />
             <MenuItem mnemonicParsing="false" text="Open…" />
-            <MenuItem fx:id="saveToFile" mnemonicParsing="false" onAction="#save" text="Save" />
             <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" text="Preferences…" />
           </items>
@@ -45,334 +45,581 @@
               <tabs>
                 <Tab text="Stats">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="770.0" prefWidth="800.0">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0">
                            <children>
-                              <GridPane layoutX="14.0" layoutY="74.0" prefHeight="410.0" prefWidth="188.0">
+                              <GridPane layoutY="20.0" prefHeight="676.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
                                 <columnConstraints>
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="101.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="84.0" />
+                                  <ColumnConstraints hgrow="ALWAYS" maxWidth="339.0" minWidth="10.0" prefWidth="155.0" />
+                                  <ColumnConstraints hgrow="ALWAYS" maxWidth="596.0" minWidth="10.0" prefWidth="215.0" />
+                                    <ColumnConstraints hgrow="ALWAYS" maxWidth="558.0" minWidth="10.0" prefWidth="257.0" />
                                 </columnConstraints>
                                 <rowConstraints>
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
-                                  <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="56.0" minHeight="6.0" prefHeight="34.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                                  <RowConstraints vgrow="ALWAYS" />
                                 </rowConstraints>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Strength" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Dexterity" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Constitution" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Charisma" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Wisdom" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Intelligence" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
-                                    <TextField fx:id="StrDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="2" />
-                                    <TextField fx:id="DexDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="4" />
-                                    <TextField fx:id="ConDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="6" />
-                                    <TextField fx:id="ChaDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="8" />
-                                    <TextField fx:id="WisDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="10" />
-                                    <TextField fx:id="IntDisplay" alignment="CENTER" onAction="#buttonPressed" prefWidth="150.0" GridPane.rowIndex="12" />
-                                    <Label text="Ability Score" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label fx:id="strModArea" text="Str Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                                    <Label fx:id="dexModArea" text="Dex Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-                                    <Label fx:id="conModArea" text="Con Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-                                    <Label fx:id="chaModArea" text="Cha Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
-                                    <Label fx:id="wisModArea" text="Wis Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
-                                    <Label fx:id="intModArea" text="Int Mod" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
-                                    <Button fx:id="updateButton" mnemonicParsing="false" onAction="#buttonPressed" text="UPDATE" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
-                                    <Label text="Modifier" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                                 </children>
-                              </GridPane>
-                              <GridPane layoutX="474.0" layoutY="74.0" prefHeight="618.0" prefWidth="194.0">
-                                <columnConstraints>
-                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="141.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="30.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                </rowConstraints>
-                                 <children>
-                                    <CheckBox fx:id="acroProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="anmlProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="arcanaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="athletProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="14" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="decepProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="15" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="histProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="16" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="insightProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="17" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="initimiProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="18" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="investProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="19" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="mediProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="20" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="natureProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="21" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="percepProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="22" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="performProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="23" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="persuaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="24" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="reliProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="25" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="sohProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="26" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="stealthProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="27" GridPane.valignment="CENTER" />
-                                    <CheckBox fx:id="surviveProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="28" GridPane.valignment="CENTER" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Acrobatics" GridPane.rowIndex="11" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Animal Handling" GridPane.rowIndex="12" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Arcana" GridPane.rowIndex="13" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Athletics" GridPane.rowIndex="14" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Deception" GridPane.rowIndex="15" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" History" GridPane.rowIndex="16" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Insight" GridPane.rowIndex="17" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Intimidation" GridPane.rowIndex="18" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Investigation" GridPane.rowIndex="19" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Medicine" GridPane.rowIndex="20" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Nature" GridPane.rowIndex="21" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Perception" GridPane.rowIndex="22" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Performance" GridPane.rowIndex="23" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Persuasion" GridPane.rowIndex="24" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Religion" GridPane.rowIndex="25" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Sleight of hand" GridPane.rowIndex="26" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Stealth" GridPane.rowIndex="27" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Survival" GridPane.rowIndex="28" />
-                                    <Label fx:id="acroLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+                                    <GridPane alignment="CENTER_LEFT" prefHeight="481.0" prefWidth="186.0">
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="101.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="166.0" minHeight="7.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="169.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="60.0" minHeight="6.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Strength" underline="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Dexterity" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Constitution" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Charisma" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Wisdom" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Intelligence" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                                          <TextField fx:id="StrDisplay" alignment="CENTER" onAction="#buttonPressed" prefHeight="25.0" prefWidth="87.0" GridPane.rowIndex="1" />
+                                          <TextField fx:id="DexDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="4" />
+                                          <TextField fx:id="ConDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="7" />
+                                          <TextField fx:id="IntDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="10" />
+                                          <TextField fx:id="WisDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="13" />
+                                          <TextField fx:id="ChaDisplay" alignment="CENTER" onAction="#buttonPressed" GridPane.rowIndex="16" />
+                                          <Label fx:id="strModArea" text="Str Mod" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                          <Label fx:id="dexModArea" text="Dex Mod" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                                          <Label fx:id="conModArea" text="Con Mod" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                          <Label fx:id="chaModArea" text="Cha Mod" GridPane.halignment="CENTER" GridPane.rowIndex="17" GridPane.valignment="CENTER" />
+                                          <Label fx:id="wisModArea" text="Wis Mod" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER" />
+                                          <Label fx:id="intModArea" text="Int Mod" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                                          <Button fx:id="updateButton" mnemonicParsing="false" onAction="#buttonPressed" text="UPDATE" GridPane.halignment="CENTER" GridPane.rowIndex="18" GridPane.valignment="CENTER" />
+                                       </children>
                                        <padding>
-                                          <Insets right="5.0" />
+                                          <Insets bottom="5.0" left="5.0" />
                                        </padding>
+                                    </GridPane>
+                                    <GridPane prefHeight="522.0" prefWidth="219.0" GridPane.columnIndex="1">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.0" minWidth="10.0" prefWidth="196.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.0" minWidth="0.0" prefWidth="23.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <CheckBox fx:id="acroProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="anmlProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="arcanaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="athletProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="14" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="decepProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="15" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="histProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="16" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="insightProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="17" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="initimiProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="18" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="investProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="19" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="mediProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="20" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="natureProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="21" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="percepProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="22" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="performProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="23" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="persuaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="24" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="reliProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="25" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="sohProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="26" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="stealthProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="27" GridPane.valignment="CENTER" />
+                                          <CheckBox fx:id="surviveProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="28" GridPane.valignment="CENTER" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Acrobatics" GridPane.rowIndex="11">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Animal Handling" GridPane.rowIndex="12">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Arcana" GridPane.rowIndex="13">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Athletics" GridPane.rowIndex="14">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deception" GridPane.rowIndex="15">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="History" GridPane.rowIndex="16">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Insight" GridPane.rowIndex="17">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Intimidation" GridPane.rowIndex="18">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Investigation" GridPane.rowIndex="19">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Medicine" GridPane.rowIndex="20">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nature" GridPane.rowIndex="21">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Perception" GridPane.rowIndex="22">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Performance" GridPane.rowIndex="23">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Persuasion" GridPane.rowIndex="24">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Religion" GridPane.rowIndex="25">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sleight of hand" GridPane.rowIndex="26">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stealth" GridPane.rowIndex="27">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Survival" GridPane.rowIndex="28">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Text>
+                                          <Label fx:id="acroLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="AnmlLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="ArcanaLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="athlLabel" text="Str" GridPane.halignment="RIGHT" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="DecepLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="15" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="HistLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="16" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="InsightLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="17" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="IntimidLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="18" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="InvestLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="19" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="MediLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="20" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="NatureLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="21" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="PercepLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="22" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="PerformLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="23" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="PersuadeLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="24" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="ReliLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="25" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="SleightLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="26" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="StealthLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="27" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="SurviveLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="28" GridPane.valignment="CENTER">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label prefHeight="21.0" prefWidth="64.0" text="Int Save" GridPane.halignment="LEFT" GridPane.rowIndex="9">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="intSave" text="int save" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <CheckBox fx:id="intProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="9" />
+                                          <Label text="Wis Save" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="wisSave" text="wis save" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <CheckBox fx:id="wisProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
+                                          <Label text="Cha Save" GridPane.halignment="LEFT" GridPane.rowIndex="7">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Con Save" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="chaSave" text="cha save" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="conSave" text="con save" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <CheckBox fx:id="chaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" />
+                                          <CheckBox fx:id="conProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
+                                          <Label text="Dex Save" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="dexSave" text="dex save" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <CheckBox fx:id="dexProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
+                                          <Label text="Str Save" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="strSave" text="str save" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <CheckBox fx:id="strProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+                                          <CheckBox mnemonicParsing="false" prefHeight="21.0" prefWidth="121.0" text="Inspiration" GridPane.halignment="LEFT">
+                                             <padding>
+                                                <Insets top="5.0" />
+                                             </padding>
+                                          </CheckBox>
+                                          <Label text="Prof. Bonus" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="profLabel" text="Prof." GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                                          <Label text="Passive Wisdom" GridPane.rowIndex="30">
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
                                        <GridPane.margin>
-                                          <Insets />
+                                          <Insets bottom="10.0" />
                                        </GridPane.margin>
-                                    </Label>
-                                    <Label fx:id="AnmlLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="12" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="ArcanaLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="13" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="athlLabel" text="Str" GridPane.halignment="RIGHT" GridPane.rowIndex="14" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="DecepLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="15" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="HistLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="16" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="InsightLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="17" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="IntimidLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="18" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="InvestLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="19" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="MediLabel" text="Int" GridPane.halignment="RIGHT" GridPane.rowIndex="20" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="NatureLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="21" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="PercepLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="22" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="PerformLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="23" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="PersuadeLabel" text="Cha" GridPane.halignment="RIGHT" GridPane.rowIndex="24" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="ReliLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="25" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="SleightLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="26" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="StealthLabel" text="Dex" GridPane.halignment="RIGHT" GridPane.rowIndex="27" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label fx:id="SurviveLabel" text="Wis" GridPane.halignment="RIGHT" GridPane.rowIndex="28" GridPane.valignment="CENTER">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding>
-                                    </Label>
-                                    <Label prefHeight="5.0" prefWidth="42.0" text="Int Save" GridPane.halignment="LEFT" GridPane.rowIndex="9" />
-                                    <Label fx:id="intSave" text="int save" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding></Label>
-                                    <CheckBox fx:id="intProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="9" />
-                                    <Label text="Wis Save" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
-                                    <Label fx:id="wisSave" text="wis save" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding></Label>
-                                    <CheckBox fx:id="wisProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
-                                    <Label text="Cha Save" GridPane.halignment="LEFT" GridPane.rowIndex="7" />
-                                    <Label text="Con Save" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
-                                    <Label fx:id="chaSave" text="cha save" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding></Label>
-                                    <Label fx:id="conSave" text="con save" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding></Label>
-                                    <CheckBox fx:id="chaProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" />
-                                    <CheckBox fx:id="conProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
-                                    <Label text="Dex Save" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
-                                    <Label fx:id="dexSave" text="dex save" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding></Label>
-                                    <CheckBox fx:id="dexProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
-                                    <Label text="Str Save" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
-                                    <Label fx:id="strSave" text="str save" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
-                                       <padding>
-                                          <Insets right="5.0" />
-                                       </padding></Label>
-                                    <CheckBox fx:id="strProf" mnemonicParsing="false" onAction="#updateCheck" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
-                                    <CheckBox mnemonicParsing="false" prefHeight="21.0" prefWidth="121.0" text="Inspiration" GridPane.halignment="LEFT" />
-                                    <Label text="Prof. Bonus" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
-                                    <Label fx:id="profLabel" text="Prof." GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
-                                 </children>
-                              </GridPane>
-                              <GridPane layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="780.0">
-                                <columnConstraints>
-                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="57.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="166.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="0.0" prefWidth="93.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="109.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="109.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="109.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="105.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="93.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                </rowConstraints>
-                                 <children>
-                                    <Label text="Class" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Class Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Faction" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
-                                    <Label text="Faction" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Exp Current" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Level" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
-                                    <Label fx:id="levelLabel" text="Current Level" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <TextField prefHeight="20.0" prefWidth="201.0" GridPane.columnIndex="1" />
-                                    <Label text="Name" GridPane.halignment="CENTER" />
-                                    <Label text="Armor Class" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
-                                    <Label text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Initiative" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
-                                    <Label text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                    <Label text="Speed" GridPane.columnIndex="7" GridPane.halignment="CENTER" />
-                                    <Label text="Current Exp" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
-                                 </children>
-                              </GridPane>
-                              <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="492.0" prefHeight="193.0" prefWidth="195.0">
-                                <columnConstraints>
-                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="134.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="84.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                </rowConstraints>
-                                 <children>
-                                    <Label text="Copper" underline="true" GridPane.rowIndex="1">
-                                       <padding>
-                                          <Insets left="5.0" />
-                                       </padding></Label>
-                                    <Label text="Silver" underline="true" GridPane.rowIndex="2">
-                                       <padding>
-                                          <Insets left="5.0" />
-                                       </padding></Label>
-                                    <Label text="Electrum" underline="true" GridPane.rowIndex="3">
-                                       <padding>
-                                          <Insets left="5.0" />
-                                       </padding></Label>
-                                    <Label text="Gold" underline="true" GridPane.rowIndex="4">
-                                       <padding>
-                                          <Insets left="5.0" />
-                                       </padding></Label>
-                                    <Label text="Platinum" underline="true" GridPane.rowIndex="5">
-                                       <padding>
-                                          <Insets left="5.0" />
-                                       </padding></Label>
-                                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                    <Label text="- for remove" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    </GridPane>
+                                    <GridPane prefHeight="508.0" prefWidth="290.0" GridPane.columnIndex="2">
+                                      <columnConstraints>
+                                        <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="265.0" minWidth="10.0" prefWidth="241.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="219.0" minHeight="0.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="310.0" minHeight="10.0" prefHeight="114.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="318.0" minHeight="10.0" prefHeight="156.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <GridPane gridLinesVisible="true" GridPane.rowIndex="2">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="134.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="84.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="Copper" underline="true" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="Silver" underline="true" GridPane.rowIndex="2">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="Electrum" underline="true" GridPane.rowIndex="3">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="Gold" underline="true" GridPane.rowIndex="4">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="Platinum" underline="true" GridPane.rowIndex="5">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <Label text="- for remove" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                <Label text="SP" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="69.0" text="GP" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="15.0" text="EP" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="15.0" text="CP" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="124.0" text="PP" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" right="5.0" />
+                                             </GridPane.margin>
+                                             <padding>
+                                                <Insets bottom="10.0" />
+                                             </padding>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="1">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints maxHeight="80.0" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="142.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="142.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="124.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="Hit Points " GridPane.halignment="CENTER">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="Temp. H.P." GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label layoutX="143.0" layoutY="44.0" text="Max" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label layoutX="143.0" layoutY="44.0" text="Max" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label text="Current" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                <Label layoutX="143.0" layoutY="114.0" text="Current" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                <TextField prefHeight="90.0" prefWidth="100.0" GridPane.rowIndex="3">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </GridPane.margin>
+                                                </TextField>
+                                                <TextField layoutX="15.0" layoutY="75.0" prefHeight="90.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </GridPane.margin>
+                                                </TextField>
+                                             </children>
+                                             <padding>
+                                                <Insets top="5.0" />
+                                             </padding>
+                                          </GridPane>
+                                          <GridPane prefHeight="180.0" prefWidth="294.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="81.0" prefWidth="261.0" GridPane.rowIndex="1">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label text="Speed" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                                      <Label layoutX="110.0" layoutY="28.0" text="Armor Class" GridPane.halignment="CENTER" />
+                                                      <Label layoutX="97.0" layoutY="28.0" text="Initiative" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                      <Label layoutX="10.0" layoutY="28.0" text="AC" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                      <Label layoutX="10.0" layoutY="80.0" text="INI" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                      <Label layoutX="10.0" layoutY="80.0" prefHeight="0.0" prefWidth="28.0" text="SPD" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane gridLinesVisible="true">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="14.0" prefWidth="78.0" text="Exp Current" GridPane.halignment="CENTER" />
+                                                      <Label text="Current Exp" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets right="10.0" />
+                                             </GridPane.margin>
+                                          </GridPane>
+                                       </children>
+                                    </GridPane>
                                  </children>
                               </GridPane>
                            </children>

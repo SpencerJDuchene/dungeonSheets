@@ -22,6 +22,7 @@ import java.util.*;
     protected int Hit_Dice, Initiative, Armor_Class, Speed, experience, proficiency;
     protected String size,race,playerClass;
 
+    //TODO modify all 6 stats independently so updating with just one wont cause a failure
     //This function initializes the primary stats
     void primaryStatLoader(){
         Strength = getBaseStrength();

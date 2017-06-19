@@ -100,7 +100,8 @@ public class Controller extends main {
 
         Integer level = statCreate.getPlayer_Level();
         Integer proficiency = statCreate.getProficiency();
-        levelLabel.setText(level.toString());
+        //disabled until the level is implimented on the sheet
+        //levelLabel.setText(level.toString());
         profLabel.setText(proficiency.toString());
         updateCheck();
     }
